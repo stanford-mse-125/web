@@ -35,7 +35,6 @@ results.
 
 **Lecture:** MW 10:30-11:50am in Hewlett 201, starting March 30 <br>
 **Office hours:** See calendar below for times and locations <br>
-**Discussion section:** optional; second half of lecture block on Wednesdays <br>
 
 <iframe src="https://calendar.google.com/calendar/embed?src=40e5f74055022787ef78ea9801448a896676e36465cf1cf8f5713de071303caf%40group.calendar.google.com&ctz=America%2FLos_Angeles" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 
