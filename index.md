@@ -33,7 +33,7 @@ results.
 
 ## Class schedule
 
-**Lecture:** MW 9:30-11:20am in McCullough 115, starting April 3 <br>
+**Lecture:** MW 10:30-11:50am in Hewlett 201, starting March 30 <br>
 **Office hours:** See calendar below for times and locations <br>
 **Discussion section:** optional; second half of lecture block on Wednesdays <br>
 

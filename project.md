@@ -28,32 +28,32 @@ At the end of the quarter, each team of 2-4 students will prepare an 8-page writ
 
 ## Timeline
 
-Friday, April 14: [Project group form](https://docs.google.com/forms/d/e/1FAIpQLSdXvkp2xFpnt5vCPEWxDdNNVzOC3_5JNmFU9lrJNle9o25Lpw/viewform?usp=sf_link) due
+Friday, April 10: [Project group form](https://docs.google.com/forms/d/e/1FAIpQLSdXvkp2xFpnt5vCPEWxDdNNVzOC3_5JNmFU9lrJNle9o25Lpw/viewform?usp=sf_link) due
 
-Before April 28: Required [15-minute meeting](https://docs.google.com/spreadsheets/d/15LPAIsrb9VSVL28-g5id33_r0KovZpr1FbuDRUIuPQE/edit?usp=sharing) with project group and course staff
+Before April 24: Required [15-minute meeting](https://docs.google.com/spreadsheets/d/15LPAIsrb9VSVL28-g5id33_r0KovZpr1FbuDRUIuPQE/edit?usp=sharing) with project group and course staff
 
-Friday, April 28: [Project proposal](https://docs.google.com/forms/d/e/1FAIpQLScSCaniJMistiDBKNoKSPa2cUFopmpAr7-YPqWqqcgsuZP0EQ/viewform?usp=sf_link) due
+Friday, April 24: [Project proposal](https://docs.google.com/forms/d/e/1FAIpQLScSCaniJMistiDBKNoKSPa2cUFopmpAr7-YPqWqqcgsuZP0EQ/viewform?usp=sf_link) due
 
-Friday, May 12: Project midterm report (4 pages)
+Friday, May 8: Project midterm report (4 pages)
 
-Friday, June 9: Project final report (8 pages) and peer evaluations
+Friday, June 5: Project final report (8 pages) and peer evaluations
 
 
-## Required TA meeting (Before April 28)
+## Required TA meeting (Before April 24)
 
 To help assess the feasibility and suitability of your project, your are required to sign up for a [15-minute meeting slot](https://docs.google.com/spreadsheets/d/15LPAIsrb9VSVL28-g5id33_r0KovZpr1FbuDRUIuPQE/edit?usp=sharing) with a member of the course staff.
 
 It is ideal if all members of your group can attend the meeting. At least two members must be present. This meeting is a required part of the project.
 
-## Project proposal (Due April 28)
+## Project proposal (Due April 24)
 
 After discussing your project idea with the course staff, you should prepare and submit your [project proposal](https://docs.google.com/forms/d/e/1FAIpQLScSCaniJMistiDBKNoKSPa2cUFopmpAr7-YPqWqqcgsuZP0EQ/viewform?usp=sf_link). The course staff will provide detailed comments on your proposal.
 
-## Project midterm report (Due May 12)
+## Project midterm report (Due May 8)
 
 The midterm report is a 4-page submission. The bulk of the report should be extensive exploratory data analysis of one or more datasets that you will use for your project. You should conduct one or more analyses using methods taught before before the midterm report due date. You should also detail plans for additional analyses that will incorporate statistical methods learned later in the course. The comments on your project proposal should be fully addressed in the midterm report. The course staff will provide detailed comments on your midterm report.
 
-## Final report and peer evaluations (Due June 9)
+## Final report and peer evaluations (Due June 5)
 
 The final report is an 8-page submission. In the final report, you should aim to employ three or more statistical methods learned in the course, such as bootstrapping, linear regression, and regularized logistic regression. The comments on your midterm report should be fully addressed in the final report. In additional to the final report, peer evaluations should be submitted individually by each member of the project group. Peer evaluations will be considered in the grading process for the final report. 
 

@@ -16,34 +16,61 @@ description: Grading
 ## Course grading scheme
 
 The course grading scheme is designed to encourage students to keep up with
-the course content as it happens, and to join lectures in person if they're able.
+the course content as it happens,
+to learn through consistent practice and studying,
+to use AI to deepen their understanding and augment their skills,
+and to join lectures in person when possible.
 
-- **Homework (50%):** weekly (or so) homework assignments
-- **Quiz (20%):** biweekly (or so) quizzes
-- **Project (20%):** one final data analysis project
-- **Participation (10%):** students are expected to answer questions on each lecture 
-(graded on completion, not correctness)
+- **Homework (10%):** weekly (or so) homework assignments
+- **Homework review sessions (15%):** weekly small-group discussions of homework with a TA
+- **Quizzes (25%):** weekly (or so) in-class quizzes
+- **Project (30%):** one final data analysis project
+- **Final exam (20%):** cumulative final exam
 
-These weights are approximate; we reserve the right to change them later.
+### Flexible weighting for quizzes and the final exam
+
+Students who are unable to attend a given quiz may shift the weight of
+that quiz onto the final exam, and vice versa.
+The table below shows a few examples:
+
+| Quizzes missed | Quizzes weight | Final exam weight |
+|---|---|---|
+| 0 | 25% | 20% |
+| 2 (of 8) | 18.75% | 26.25% |
+| 4 (of 8) | 12.5% | 32.5% |
+| All | 0% | 45% |
+
+Conversely, students who cannot attend the final exam may shift its weight onto the quizzes:
+
+| Skip final? | Quizzes weight | Final exam weight |
+|---|---|---|
+| No | 25% | 20% |
+| Yes | 45% | 0% |
 
 More details about each assignment follow.
 
+*OAE Deadlines.*
+If you plan to use your OAE approved exam accommodations for a specific assessment, you must [provide your accommodation letter and inform the instructor (using this webform)](https://docs.google.com/forms/d/e/1FAIpQLSfNDYk9PgTU-XUdYrz3kt2_2bdFSk8LbSM2Hhd-hijEdJJV3A/viewform?usp=publish-editor) by:
+- 10 calendar days prior to a midterm or quiz date.
+- No later than May 25th, 2026, at 5:00 pm for the final exam
+You only need to submit your letter once per quarter. For urgent OAE-related accommodation needs that arise after the deadline, please consult your OAE adviser.  If you are not yet registered with OAE, contact the office directly at oae-contactus@stanford.edu.
+
 ## Homework
+
+*Grading.* Homework will be graded on a completion basis:
+you will receive a full score if you indicate that you tried
+to understand and respond to the question.
 
 *Slip days.* We recognize that students are balancing many priorities,
 and so we make accommodations to allow for late homework.
-Students have 7 slip days that may be used through the quarter with no grade penalty.
-At most 5 slip days may be used for a single assignment.
-For example, you could submit one homework five days late and a second two days late;
+Students have seven slip days that may be used through the quarter with no grade penalty.
+At most three slip days may be used for a single assignment.
+For example, you could submit two homeworks two days late and a third three days late;
 or your friend could submit seven homeworks one day late each.
 To calculate slip days, we round up: a homework submitted 24 hours and one minute after it is due will use two slip days.
 Homework submitted after all your slip days are used will receive a score of 0.
 
 *Drops.* Your lowest homework grade will be dropped.
-
-*Regrades.* You can ask for your homework to be regraded up until two days after grades have been posted.
-Regrades can increase or decrease your grade.
-(We will regrade the whole assignment, not just a single question.)
 
 *Weights.* Although some assignments are more difficult than others,
 we weight all assignments equally when computing your overall homework score.
@@ -54,90 +81,98 @@ Our collaboration policy is geared to make sure you can get the help you need,
 and so that by the time you turn in your work you understand what it's about,
 how it works, and why it's important.
 
-Students are allowed - and even encouraged - to collaborate on homework.
-However, each student must submit their own homework. We ask that you
+Students are allowed - and even encouraged - to collaborate with each other and with AI on homework.
+However, each student must submit their own homework.
+We ask that you
 
 - Give credit to the people who have helped you: please write on your homework the names of the people you worked with.
-- Give credit to the other resources that have helped you: please write on your homework 
-the textbooks, notes, web pages, or large language models you found useful.
-- Write up your homework by yourself. ~That is, all of the text that you submit should be typed or hand-written by you.
-No copy-pasting.~ UPDATE: Tab-completing code via CodeSquire or equivalent is allowed. You do not need to re-type autocompleted CodeSquire output. 
+- Give credit to the other resources that have helped you: please write on your homework
+the textbooks, notes, web pages, or AI models you found useful,
+with details on how you used each.
 
-*Partial credit.* If you're not able to answer a homework question, but you show us
-the work that you performed to think about the question and to try to understand it,
-you will receive partial credit.
+*Using AI effectively.*
+You may use AI tools to help you understand concepts, debug code, or check your work.
+You should not paste a homework problem into an AI and submit the output.
+A good test: could you reproduce your solution on a whiteboard without AI assistance?
+If not, you haven't learned the material yet.
+The homework review sessions (see below) are designed to help you confirm
+that you've truly understood the material.
 
-*Sharing solutions.* 
+*Sharing solutions.*
 Under no circumstance should you seek out or look at solutions to assignments given in previous years,
 or share or post solutions (yours or ours) to a public website.
 
+## Homework review sessions
+
+After each homework deadline, every student will attend a 30-minute review session
+in a group of approximately 5 students with 1 TA.
+Each student will briefly present one problem from the homework,
+explain their approach, and answer follow-up questions from the TA and peers.
+
+*Purpose.* Review sessions are the primary way we verify and deepen your understanding
+of the homework material. They also give you a chance to learn from how your peers
+approached the same problems.
+
+*Grading.* Each session is scored on a simple rubric:
+- **2** — demonstrated understanding of the problem and approach
+- **1** — present but could not clearly explain their solution
+- **0** — absent
+
+*Logistics.* At the start of the quarter, you will sign up for a recurring weekly time slot.
+If you need to miss your regular slot, you may attend a different session that week
+with advance notice to the TA.
+
+*Drops.* Your lowest review session score will be dropped.
+
 ## Quizzes
 
-This class will have no exams. Instead, we will have about 5 quizzes (approximately biweekly),
+This class will have 8 quizzes (approximately weekly),
 which will ask some simple questions on course material.
-Each quiz should take you about 20 minutes. Quizzes will be cumulative.
-We may have in-class or take-home quizzes.
+Quizzes will be cumulative.
 
-Take-home quizzes will be posted on Gradescope. They will be open from Friday 10am to Saturday noon ET;
-you will have 40 minutes from the time you begin the quiz to complete it.
-(We suggest setting a reminder on your calendar or phone to remember to take the quiz!)
-Do not close your browser; you will not be able to reopen the quiz.
-Take-home quizzes are open book, open note, open internet, and open AI tools.
-Collaboration with other students is prohibited.
-Do not communicate with other students during the quiz
-or about what questions were on the quiz,
-until after the deadline for quiz submissions.
-
-In-class quizzes will happen in class on Wednesdays.
+Quizzes will take place in class on Wednesdays.
 These quizzes will be closed book and internet.
 You may bring a single sheet of handwritten notes.
 (It's fine to write on both sides.)
-You will have half an hour to complete the quiz.
+Each quiz will generally last 10 minutes, but some may be longer.
 
 *Regrades.* You can ask for your quiz to be regraded up until two days after grades have been assigned.
 Regrades may increase or decrease your grade.
 
-*Drops.* In computing your final grade, we will drop your lowest quiz score.
+*Drops.* In computing your final quiz grade, we will drop your lowest quiz score.
+
+*Accommodations.* Quizzes are an entirely optional part of the course.
+If you are not able to take the quizzes in class in the time allocated,
+you may choose the grading option that places no weight on the quizzes
+(see the flexible weighting table above).
+Of course, you're welcome to take the quizzes and learn from them
+even if you don't plan to use them for your course grade!
+
+## Exams
+
+This class will have a final exam during the assigned exam period
+scheduled by the University registrar.
+The exam will be cumulative, closed book and internet.
+You may bring a single sheet of handwritten notes.
+The final exam will be 1.5 hours long.
+
+*Accommodations.* If you have a letter from the Office of Accessible Education
+that grants extra time or modified test-taking conditions, send your letter
+to the course staff and we will accommodate your needs on the final exam.
+If you are not able to take the final exam in person at the designated time,
+for example due to an internship that starts before exam week,
+you may choose the grading option that places no weight on the exam
+(see the flexible weighting table above).
+
+*Academic integrity.*
+This course is participating in the proctoring pilot overseen by the Academic Integrity Working Group (AIWG). The purpose of this pilot is to determine the efficacy of proctoring and develop effective practices for proctoring in-person exams at Stanford.  To find more details on the pilot or the working group, please visit [the AIWG's webpage](https://studentaffairs.stanford.edu/AIWG).
 
 ## Exceptions
 
 Beyond the slip days and drops outlined above,
-extensions on assignments will be granted only 
+extensions on assignments will be granted only
 with an academic accommodation letter from the Office of Accessible Education
 (generally for medical reasons).
 or in other such exceptional circumstances.
 Requests due to job interviews, other classes and assignments, and poor planning will not be considered.
 We suggest you save your slip days to insure against catastrophe.
-
-## Attendance
-
-Class participation is important for staying engaged and in-sync with the course material. 
-Attending in person is encouraged through our participation policy:
-
-* In-class participation will be recorded using in-class polls on the Poll Everywhere website. 
-You must log in using your SUNet credentials. Go to Pollev.stanford.edu and log in with your SUNet credentials to access your free account. Or enter your SUNet email address at Polleverywhere.com and click Log in with Stanford to enter through the SUNet portal.
-* If you are not able to make it to class (e.g., if you are sick), 
-you can instead watch the lecture recording, which will be posted after the lecture on Canvas, 
-and [submit the makeup participation form](https://forms.gle/Pv4o5jNs8aqsARkt7) before the start of the next class.
-* We drop your lower two participation scores; so, you can get a perfect participation score even if you miss class twice without submitting the makeup participation form.
-
-**DO NOT** register for this course if you have a recurring conflict with the lecture block.
-Lectures are recorded so that students who are sick or otherwise unable to come to class can receive full credit 
-without having to prove their disability. 
-However, we still believe that students learn best in class, and so if attendance is too low, 
-we may drop the remote participation option at any time.
-
-Office hours are not recorded. 
-
-Discussion section will consist of one-on-one help with hands-on exercises that prepare you for the homework assignments. 
-Discussion section attendance is not mandatory.
-Be sure to bring your laptop.
-
-<!-- * We do not plan on recording any component of the course. -->
-
-<!-- The teaching staff may periodically conduct attendance checks. -->
-
-<!-- * Laptops and phones are not allowed in lecture, though you are permitted to use a tablet to take handwritten notes. [This article](https://www.nytimes.com/2017/11/22/business/laptops-not-during-lecture-or-meeting.html) explains why we have this policy. -->
-
-<!-- This experience is typically much more valuable and enjoyable if attended in person, though we will attempt to stream the discussion section via Zoom.  -->
-

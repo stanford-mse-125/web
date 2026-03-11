@@ -55,7 +55,7 @@ through which students may request financial assistance to purchase any necessar
 
 We encourage you to work together in groups to solidify your understanding of the course material. 
 If you would like assistance forming a study group, please complete [this form](https://forms.gle/1xfXRZ968Xh9XEMY8) 
-by Thursday, April 6 at 9pm PT. 
+by Thursday, April 2 at 9pm PT. 
 Our goal is to form the study groups the following day, 
 so students can begin discussing the first homework assignment.
 

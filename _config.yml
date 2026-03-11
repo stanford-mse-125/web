@@ -17,7 +17,7 @@ title: MS&E 125
 tagline: Introduction to Applied Statistics
 description: A sophomore level course in Management Science and Engineering at Stanford
 author: Madeleine Udell
-baseurl: '/website-2023' # the subpath of your site, e.g. /blog
+baseurl: '/web' # the subpath of your site, e.g. /blog
 url: 'https://stanford-mse-125.github.io' # the base hostname & protocol for your site, e.g. http://example.com
 exclude: ["Gemfile", "Gemfile.lock", "LICENSE"]
 
