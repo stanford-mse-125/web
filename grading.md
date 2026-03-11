@@ -48,15 +48,15 @@ The table below shows a few examples:
 - **1** — a genuine, if unsuccessful, attempt to solve the problem
 - **0** — no answer or no serious attempt made
 
+*Drops.* Your lowest homework grade will be dropped.
+
+*Weights.* We weight all assignments equally when computing your overall homework score.
+
 *Slip days.* Students have seven slip days that may be used through the quarter with no grade penalty.
 At most three slip days may be used for a single assignment.
 For example, you could submit two homeworks two days late and a third three days late.
 To calculate slip days, we round up: a homework submitted 24 hours and one minute after it is due will use two slip days.
 Homework submitted after all your slip days are used will receive a score of 0.
-
-*Drops.* Your lowest homework grade will be dropped.
-
-*Weights.* We weight all assignments equally when computing your overall homework score.
 
 *Collaboration.*
 You are allowed - and encouraged - to collaborate with each other and with AI on homework.
@@ -92,11 +92,11 @@ explain their approach, and answer follow-up questions from the TA and peers.
 - **1** — present but could not clearly explain their solution
 - **0** — absent
 
+*Drops.* Your lowest review session score will be dropped.
+
 *Logistics.* At the start of the quarter, you will sign up for a recurring weekly time slot.
 If you need to miss your regular slot, you may attend a different session that week
 with advance notice to the TA.
-
-*Drops.* Your lowest review session score will be dropped.
 
 ## Quizzes
 
@@ -109,10 +109,10 @@ These quizzes will be closed book and internet.
 You may bring a single sheet of handwritten notes (both sides).
 Each quiz will generally last 10 minutes, but some may be longer.
 
+*Drops.* Your lowest quiz score will be dropped.
+
 *Regrades.* You can ask for your quiz to be regraded up until two days after grades have been assigned.
 Regrades may increase or decrease your grade.
-
-*Drops.* In computing your final quiz grade, we will drop your lowest quiz score.
 
 *Accommodations.* If you are not able to take the quizzes in class,
 you may shift all quiz weight onto the final exam
