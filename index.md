@@ -36,7 +36,7 @@ results.
 **Lecture:** MW 10:30-11:50am in Hewlett 201, starting March 30 <br>
 **Office hours:** See calendar below for times and locations <br>
 
-<iframe src="https://calendar.google.com/calendar/embed?src=40e5f74055022787ef78ea9801448a896676e36465cf1cf8f5713de071303caf%40group.calendar.google.com&ctz=America%2FLos_Angeles" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+<iframe src="https://calendar.google.com/calendar/embed?src=40e5f74055022787ef78ea9801448a896676e36465cf1cf8f5713de071303caf%40group.calendar.google.com&ctz=America%2FLos_Angeles&mode=WEEK" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 
 All zoom links require SUID login for security.
 
@@ -51,6 +51,7 @@ and more.
 
 The MS&E 125 materials build on course content developed by 
 [Sharad Goel](https://5harad.com/), 
+[Mike Van Ness](https://mvanness354.github.io/blog/),
 [Josh Grossman](http://www.jdgrossman.com), 
 [Peter Frazier](https://people.orie.cornell.edu/pfrazier/),
 and [the Data 8 team](http://www.data8.org/).
