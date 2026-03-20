@@ -7,33 +7,34 @@ description: Course modules and dates
 
 | **Day** | **Lecture** | **Demo** | **Due** | **Reading** |
 |---|---|---|---|---|
-| M March 30 | [Introduction](lectures/intro.pdf) |  |  |  |
-| W April 1 | [Visualization](lectures/eda.pdf) | [sales](https://colab.research.google.com/github/stanford-mse-125/demos/blob/main/sales.ipynb) |  | [Pandas tutorials](https://pandas.pydata.org/docs/getting_started/index.html#getting-started) |
-| M April 6 | [Munging](lectures/munging.pdf) | [fires](https://colab.research.google.com/github/stanford-mse-125/demos/blob/main/fires.ipynb) [join](https://colab.research.google.com/github/stanford-mse-125/demos/blob/main/join.ipynb) |  |[Helpful functions](https://github.com/stanford-mse-125/demos/blob/main/functions-used.md) |
-| W April 8 | [Models and inference](lectures/inference.pdf) | [inference](https://colab.research.google.com/github/stanford-mse-125/demos/blob/main/inference.ipynb) | Quiz 1 |  |
-| F April 10 |  |  | [hw1](https://colab.research.google.com/github/stanford-mse-125/homework/blob/main/HW1.ipynb)<br>[census data](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/stanford-mse-125/homework/blob/main/data/census.csv) <br> [project groups](https://docs.google.com/forms/d/e/1FAIpQLSdXvkp2xFpnt5vCPEWxDdNNVzOC3_5JNmFU9lrJNle9o25Lpw/viewform?usp=sf_link) |  |
-| M April 13 | [CLT and confidence intervals](lectures/inference.pdf) | [inference](https://colab.research.google.com/github/stanford-mse-125/demos/blob/main/inference.ipynb) |  |  |
-| W April 15 | [Bootstrap](lectures/bootstrap.pdf) | [bootstrap](https://colab.research.google.com/github/stanford-mse-125/demos/blob/main/bootstrap.ipynb) | Quiz 2 <br> [hw2](https://colab.research.google.com/github/stanford-mse-125/homework/blob/main/HW2.ipynb) |  |
-| M April 20 | [Hypothesis tests](lectures/hypothesis.pdf) | [testing](https://colab.research.google.com/github/stanford-mse-125/demos/blob/main/testing.ipynb) |  | [Data 8 ch11](https://inferentialthinking.com/chapters/11/1/Assessing_a_Model.html) |
-| W April 22 | [Correlation](lectures/correlation.pdf) | [correlation](https://colab.research.google.com/github/stanford-mse-125/demos/blob/main/correlation.ipynb) | Quiz 3 | [Data8 ch 15.1](https://inferentialthinking.com/chapters/15/1/Correlation.html) |
-| Th April 23 | |  | [hw3](https://colab.research.google.com/github/stanford-mse-125/homework/blob/main/HW3.ipynb) |  |
-| F April 24 |  |  | project proposal |  |
-| M April 27 | [Linear regression](lectures/linear.pdf) | [regression](https://colab.research.google.com/github/stanford-mse-125/demos/blob/main/regression.ipynb) |  |  |
-| T April 28 |  |  | [hw4](https://colab.research.google.com/github/stanford-mse-125/homework/blob/main/HW4.ipynb)|  |
-| W April 29 | [CI for regression](lectures/linear.pdf) | [regression uncertainty](https://colab.research.google.com/github/stanford-mse-125/demos/blob/main/regression-uncertainty.ipynb), [electricity](https://colab.research.google.com/github/stanford-mse-125/demos/blob/main/electricity.ipynb) | Quiz 4 |  |
-| M May 4 | [Feature generation](lectures/feature_engineering.pdf) | [crime](https://colab.research.google.com/github/stanford-mse-125/demos/blob/main/crime.ipynb) |  |  |
-| T May 5 |  |  | [hw5](https://colab.research.google.com/github/stanford-mse-125/homework/blob/main/HW5.ipynb) |  |
-| W May 6 | [Model selection](lectures/bias-variance.pdf) | [crime](https://colab.research.google.com/github/stanford-mse-125/demos/blob/main/crime.ipynb) | Quiz 5 |  |
-| F May 8 |  |  | project midterm report |  |
-| M May 11 | [More feature generation](lectures/feature_engineering.pdf) |  |  |  |
-| T May 12 |  |  | [hw6](https://colab.research.google.com/github/stanford-mse-125/homework/blob/main/HW6.ipynb) |  |
-| W May 13 | [More feature generation](lectures/feature_engineering.pdf) | [crime](https://colab.research.google.com/github/stanford-mse-125/demos/blob/main/crime.ipynb) | Quiz 6 |  |
-| M May 18 | [Logistic regression](lectures/logistic.pdf) |  |  |  |
-| T May 19 | |  | |  |
-| W May 20 | [Error metrics](lectures/classification-metrics.pdf) |  | Quiz 7 |  |
-| M May 25 | Holiday |  |[hw7](https://colab.research.google.com/github/stanford-mse-125/homework/blob/main/HW7.ipynb) |  |
-| T May 26 |  |  |  |  |
-| W May 27 | [Forecasting](lectures/forecasting.pdf) | [forecasting](https://colab.research.google.com/github/stanford-mse-125/demos/blob/main/forecasting.ipynb) | Quiz 8 |  |
-| M June 1 | [Causal inference](https://docs.google.com/presentation/d/1kiK8ByzCNVWff7NfwBK90_CL--kocb1cZWv9g3xyv64/edit?usp=sharing) |  |[hw8](https://colab.research.google.com/github/stanford-mse-125/homework/blob/main/HW8.ipynb) |  |
-| W June 3 | [AutoML](lectures/automl.pdf) |  |  |  |
-| F June 5 |  |  | project final report |  |
+| M March 30 | Introduction | | | [Data 8 Ch 1](https://inferentialthinking.com/chapters/01/what-is-data-science.html) |
+| W April 1 | EDA & visualization | | | [IMS Ch 2](https://openintro-ims.netlify.app/explore-categorical.html) |
+| M April 6 | Data munging + AI gotchas | | | [Pandas tutorials](https://pandas.pydata.org/docs/getting_started/index.html#getting-started) |
+| W April 8 | Linear algebra: vectors, span, column space | | Quiz 1 | [VMLS Ch 1, 5](https://web.stanford.edu/~boyd/vmls/vmls.pdf) |
+| M April 13 | Linear regression as projection | | | [VMLS Ch 13](https://web.stanford.edu/~boyd/vmls/vmls.pdf); [Data 8 Ch 15](https://inferentialthinking.com/chapters/15/Prediction.html) |
+| M April 14 | | | HW1 | |
+| W April 15 | Feature engineering | | Quiz 2 | [IMS Ch 8–10](https://openintro-ims.netlify.app/model-mlr.html) |
+| F April 17 | | | Project groups | |
+| M April 20 | Trees, validation, and bias-variance | | | [VMLS Ch 13.3](https://web.stanford.edu/~boyd/vmls/vmls.pdf); [IMS Ch 8–10](https://openintro-ims.netlify.app/model-mlr.html) |
+| W April 22 | Bootstrap and the normal approximation | | Quiz 3 | [Data 8 Ch 10](https://inferentialthinking.com/chapters/10/Sampling_and_Empirical_Distributions.html); [IMS Ch 5](https://openintro-ims.netlify.app/foundations-bootstrapping.html) |
+| M April 27 | Permutation tests | | | [Data 8 Ch 12](https://inferentialthinking.com/chapters/12/Comparing_Two_Samples.html); [Data 8 Ch 13](https://inferentialthinking.com/chapters/13/Estimation.html) |
+| M April 28 | | | HW2 | |
+| W April 29 | Hypothesis testing framework | | Quiz 4 | [Data 8 Ch 11](https://inferentialthinking.com/chapters/11/Testing_Hypotheses.html) |
+| F May 1 | | | Project proposal | |
+| M May 4 | Multiple testing + correlation | | | [Poldrack Ch 17](https://statsthinking21.github.io/statsthinking21-core-site/); [Data 8 Ch 15.1](https://inferentialthinking.com/chapters/15/1/Correlation.html) |
+| W May 6 | Regression inference + diagnostics | | Quiz 5 | [IMS Ch 24–25](https://openintro-ims.netlify.app/inf-model-slr.html) |
+| M May 11 | Classification (logistic regression + metrics) | | | [IMS Ch 9](https://openintro-ims.netlify.app/model-logistic.html) |
+| M May 12 | | | HW3 | |
+| W May 13 | PCA / dimensionality reduction | | Quiz 6 | [VMLS Ch 16](https://web.stanford.edu/~boyd/vmls/vmls.pdf) |
+| F May 15 | | | Project midterm report | |
+| M May 18 | Clustering (k-means) | | | [VMLS Ch 4.1](https://web.stanford.edu/~boyd/vmls/vmls.pdf) |
+| W May 20 | Backtesting + time series validation | | Quiz 7 | [FPP3 Ch 5](https://otexts.com/fpp3/toolbox.html) |
+| F May 23 | | | HW4 | |
+| M May 25 | Holiday | | | |
+| W May 27 | AutoML, LLMs, and the future of data analysis | | Quiz 8 | TBD |
+| M June 1 | Causal inference I: DAGs + confounding | | | [The Effect Ch 1–6](https://theeffectbook.net/) |
+| M June 2 | | | HW5 | |
+| W June 3 | Causal inference II: natural experiments + A/B tests | | | [The Effect Ch 16–18](https://theeffectbook.net/) |
+| F June 5 | | | | |
+| F June 5 | **Final exam** 3:30–5:00 PM | | | |
+| M June 8 | | | Project final report + peer evaluations (9 AM) | |
