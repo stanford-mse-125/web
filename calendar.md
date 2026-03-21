@@ -22,7 +22,7 @@ description: Course modules and dates
 | M May 4 | [Multiple testing + correlation](https://stanford-mse-125.github.io/book/lec11-multiple-testing.html) | | | [Poldrack Ch 17](https://statsthinking21.github.io/statsthinking21-core-site/); [Data 8 Ch 15.1](https://inferentialthinking.com/chapters/15/1/Correlation.html) |
 | W May 6 | [Regression inference + diagnostics](https://stanford-mse-125.github.io/book/lec12-regression-inference.html) | | Quiz 5 | [IMS Ch 24–25](https://openintro-ims.netlify.app/inf-model-slr.html) |
 | M May 11 | [Classification (logistic regression + metrics)](https://stanford-mse-125.github.io/book/lec13-classification.html) | | HW3 | [IMS Ch 9](https://openintro-ims.netlify.app/model-logistic.html) |
-| W May 13 | [PCA / dimensionality reduction](https://stanford-mse-125.github.io/book/lec14-pca.html) | | Quiz 6 | [VMLS Ch 16](https://web.stanford.edu/~boyd/vmls/vmls.pdf) |
+| W May 13 | [PCA / dimensionality reduction](https://stanford-mse-125.github.io/book/lec14-pca.html) | | Quiz 6 | [VanderPlas Ch 5.09](https://jakevdp.github.io/PythonDataScienceHandbook/05.09-principal-component-analysis.html) |
 | F May 15 | | | Project midterm report | |
 | M May 18 | [Clustering (k-means)](https://stanford-mse-125.github.io/book/lec15-clustering.html) | | | [VMLS Ch 4.1](https://web.stanford.edu/~boyd/vmls/vmls.pdf) |
 | W May 20 | [Backtesting + time series validation](https://stanford-mse-125.github.io/book/lec16-backtesting.html) | | Quiz 7 | [FPP3 Ch 5](https://otexts.com/fpp3/toolbox.html) |
