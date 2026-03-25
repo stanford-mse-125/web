@@ -13,140 +13,97 @@ description: Project
 1. TOC
 {:toc}
 
-## Description
+## Overview
 
-The MS&E 125 project provides hands-on experience with key steps of the data science pipeline:
+The MS&E 125 project provides hands-on experience with the data science pipeline: asking research questions, identifying datasets, cleaning and analyzing data, and communicating findings. Teams of 2–4 students prepare a written report and give an in-person presentation.
 
-- Asking research questions
-- Identifying dataset(s) to help you answer your questions
-- Cleaning, exploring, and analyzing datasets using tools from 125 and beyond
-- Synthesizing and compiling your results in a report
+Any data-driven investigation is fair game. Past teams have studied athletic performance, gender inequality, restaurant quality, music success, gentrification, and standardized testing.
 
-You are free to pursue any topic related to applied statistics. In previous years, teams have considered athletic performance, gender inequality, farming practices, restaurant quality, music success, gentrification, and standardized testing, just to name a few. Any data-driven investigation is fair game. 
+## Deliverables and deadlines
 
-At the end of the quarter, each team of 2-4 students will prepare an 8-page written report. References and plots should be included in the 8 pages. 
+| Deliverable | Due | Format |
+|---|---|---|
+| Group formation | Thu Apr 17 | [Google Form (TBD)]() |
+| TA meeting | Before May 1 | 15-min slot with course staff |
+| Proposal | Thu May 1 | [Google Form (TBD)]() |
+| Midterm report | Fri May 15 | 4-page PDF |
+| Final report + peer eval | Mon Jun 8, 9:00 AM | 8-page PDF + individual peer form |
+| In-person presentation | Jun 3–17 (scheduled) | ~10 min per team |
 
-## Timeline
+## Team formation
 
-Friday, April 10: [Project group form](https://docs.google.com/forms/d/e/1FAIpQLSdXvkp2xFpnt5vCPEWxDdNNVzOC3_5JNmFU9lrJNle9o25Lpw/viewform?usp=sf_link) due
+Project teams consist of 2, 3, or 4 students. Submit your team via the Google Form by **Thursday, April 17**. If you need help finding teammates, post on Ed.
 
-Before April 24: Required [15-minute meeting](https://docs.google.com/spreadsheets/d/15LPAIsrb9VSVL28-g5id33_r0KovZpr1FbuDRUIuPQE/edit?usp=sharing) with project group and course staff
+We expect effort to scale with team size: a 4-person team should produce roughly twice the depth or breadth of a 2-person team. Peer evaluations factor into individual grades.
 
-Friday, April 24: [Project proposal](https://docs.google.com/forms/d/e/1FAIpQLScSCaniJMistiDBKNoKSPa2cUFopmpAr7-YPqWqqcgsuZP0EQ/viewform?usp=sf_link) due
+## Required TA meeting (before May 1)
 
-Friday, May 8: Project midterm report (4 pages)
+Every team must meet with a member of the course staff for 15 minutes before the proposal deadline. At least two team members must attend. Sign up for a slot on the [scheduling sheet (TBD)]().
 
-Friday, June 5: Project final report (8 pages) and peer evaluations
+## Proposal (due Thu May 1)
 
+After your TA meeting, submit your proposal via [Google Form (TBD)](). The course staff will provide detailed comments. Your proposal should describe your research question, planned datasets, and intended methods.
 
-## Required TA meeting (Before April 24)
+## Midterm report (due Fri May 15)
 
-To help assess the feasibility and suitability of your project, your are required to sign up for a [15-minute meeting slot](https://docs.google.com/spreadsheets/d/15LPAIsrb9VSVL28-g5id33_r0KovZpr1FbuDRUIuPQE/edit?usp=sharing) with a member of the course staff.
+A 4-page submission. The bulk should be extensive exploratory data analysis of your dataset(s). Include at least one analysis using methods taught before the due date, plus plans for additional analyses using methods covered later. Address all comments from your proposal.
 
-It is ideal if all members of your group can attend the meeting. At least two members must be present. This meeting is a required part of the project.
+## Final report and peer evaluations (due Mon Jun 8, 9:00 AM)
 
-## Project proposal (Due April 24)
+An 8-page submission (references and plots included in the page count). Aim to employ three or more statistical methods from the course. Address all comments from your midterm report.
 
-After discussing your project idea with the course staff, you should prepare and submit your [project proposal](https://docs.google.com/forms/d/e/1FAIpQLScSCaniJMistiDBKNoKSPa2cUFopmpAr7-YPqWqqcgsuZP0EQ/viewform?usp=sf_link). The course staff will provide detailed comments on your proposal.
+Each team member submits an individual peer evaluation. Peer evaluations will be considered in grading.
 
-## Project midterm report (Due May 8)
+## In-person presentation (Jun 3–17)
 
-The midterm report is a 4-page submission. The bulk of the report should be extensive exploratory data analysis of one or more datasets that you will use for your project. You should conduct one or more analyses using methods taught before before the midterm report due date. You should also detail plans for additional analyses that will incorporate statistical methods learned later in the course. The comments on your project proposal should be fully addressed in the midterm report. The course staff will provide detailed comments on your midterm report.
+Each team gives a ~10-minute presentation to the course staff, scheduled during the final two weeks of the quarter (Jun 3–17). Sign-up slots will be posted in week 8. All team members must attend.
 
-## Final report and peer evaluations (Due June 5)
+The presentation should cover your research question, key findings, and one methodological choice you found interesting or surprising. Slides are optional — walking through your report is fine.
 
-The final report is an 8-page submission. In the final report, you should aim to employ three or more statistical methods learned in the course, such as bootstrapping, linear regression, and regularized logistic regression. The comments on your midterm report should be fully addressed in the final report. In additional to the final report, peer evaluations should be submitted individually by each member of the project group. Peer evaluations will be considered in the grading process for the final report. 
+## Grading
 
-## Grading 
+The project is 30% of the course grade. Components:
 
-The project is intentionally open-ended and is graded holistically. Given the unique challenges faced by each team, there isn't a one-size-fits-all rubric. Some teams will spend more time collecting complex data and have simpler analyses, while others will pursue more complex analyses of data that's already clean.
+| Component | What we look for |
+|---|---|
+| Proposal | Clear question, feasible plan, suitable data |
+| Midterm report | Thorough EDA, at least one analysis, responsiveness to feedback |
+| Final report | Multiple methods applied thoughtfully, clear writing, addressed feedback |
+| Presentation | Can explain and defend your work in person |
+| Peer evaluation | Honest assessment of team contributions |
 
-As long as there's evidence that your team has spent time sufficiently collecting, cleaning, exploring, and analyzing your data, and has taken into consideration the comments on your proposal and midterm report, you should receive high marks. 
+The project is intentionally open-ended. As long as your team has spent sufficient time collecting, cleaning, exploring, and analyzing data — and has addressed feedback on your proposal and midterm report — you should receive high marks. If you have concerns about your project's direction, visit office hours.
 
-If you have concerns about the specific directions of your project, please see a member of the teaching staff during office hours. We're happy to lead you in the right direction! 
+## Report outline
 
-## Other FAQs
+This outline works for many projects. Yours may differ.
 
-### What are the expectations for larger teams?
+**Introduction and motivation** — Research questions, why they matter, hypothesis, brief summary of results.
 
-Project teams must consist of two, three, or four students. 
+**Relevant work** — Who else has studied this question? How does your project relate to or extend existing work?
 
-While it can be difficult to precisely quantify project output, we expect a 4 person group to produce a project that requires twice the effort/hours of a 2 person project. This can take the form of increased depth and/or breadth.
+**Data and methods** — Data sources, cleaning steps, methods used, and how each method addresses your research questions. For most teams, the core will be EDA followed by linear and/or logistic regression.
 
-Upon completing the project, we’ll also ask each student to evaluate the contributions of their team members, and we’ll consider these peer reviews when determining final grades.
+**Results and discussion** — Findings and interpretation. This is typically the longest section. Aim for 4–6 well-designed figures (not more than 8). Only include plots that advance your narrative.
 
-### Can we collect our own data?
+**Conclusion** — To what extent did you answer your research question? What would you do with more time?
 
-Yes! Many past students have used surveys to answer their research questions. 
+## FAQs
 
-If you plan to create a survey, be sure to share a copy of your survey with the course staff before publishing it. You'll also want publish your survey well before the project deadline. 
+**Can we collect our own data?**
+Yes. If using a survey, share a draft with the course staff before publishing. Effective survey design takes longer than expected — plan ahead.
 
-Effective survey design can take much longer than expected, so it's not a good option for a last-minute project!
+**Can reports exceed 8 pages?**
+You may include an appendix of supplementary results, but the teaching team may not review material beyond 8 pages. Include only results that serve your narrative.
 
-### Can project reports be longer than 8 pages? 
+**Can reports be double-spaced?**
+Use whatever spacing tells your story effectively. Well-designed figures with informative captions are often more valuable than additional text.
 
-You're welcome to include an appendix of additional relevant results, but we can't guarantee that the teaching team will review anything beyond 8 pages. Please make sure not to just dump all of your extraneous findings and plots in an appendix unless there's a good reason to include them. While research papers often have just 3-5 main plots, researchers will often produce *hundreds* of plots over the course of a project that the public never sees. 
+**What if my project is not novel?**
+Repeating and extending an existing analysis is a strong approach. Use a fresher dataset, add a new method, or apply the same techniques to a different domain.
 
-### Can reports be double spaced? 
+**How can I make my project more interesting?**
+Frame it as a decision problem: what actions could a business, government agency, or NGO take based on your findings? Which actions have the best return on investment?
 
-You should include as much text as needed to fully tell the story of your project. If you can do that with double spaced text, that's fine. Keep in mind that plots/figures will take up a lot of space in your report, and relevant/thoughtfully-designed plots/figures/captions are arguably more important than the main text.
-
-### Is there a presentation component to the project?
-
-No. If you think a supplementary video will help us better understand the findings in your report, please discuss with the course staff before the project deadline. 
-
-### Is there a rough outline of what you're looking for in the report?
-
-As mentioned above, the project is intentionally open-ended and doesn't have a fixed rubric. That being said, here is a sample outline that works for many projects. Keep in mind that your outline may differ!
-
-**Introduction and motivation**
-
-- What are your research questions? 
-
-- Why are these question interesting? 
-
-- What's your hypothesis? 
-
-- What's the brief summary of your results?
-
-**Relevant work**
-
-- Who else has tried to answer your questions? 
-
-- Were they successful? 
-
-- How does your project relate to or build on existing work? 
-
-- You should be able to recycle a lot of your proposal submission in this section!
-
-**Data and methods**
-
-- How will you go about answering your research questions? 
-
-- What data sources will you use? 
-
-- What methods will you use, and how will they answer your research questions? 
-
-- For most groups, the ideal methods will be extensive exploratory data analysis, followed by linear and/or a logistic regression(s). If this is the case for your project, you would use this section to describe what you will plot, describe the structure of your regressions, and explain how your regressions will answer your research questions.
-
-**Results and discussion**
-
-- What are your findings? 
-
-- How do you interpret those findings?
-
-- This will probably be your longest section, so spend the most time here. 
-
-- You shouldn't have more than 8 total plots+figures in your results. 4-6 is a good target. Only include plots if they are relevant to your story. 
-
-- Spend sufficient time making your plots pretty! With a tool like ChatGPT/CodeSquire, it's a lot easier to figure out how to clean up plots. Aim to make your plots as clean as a plot you might see in a professional news outlet. You're welcome to discuss potential improvements to your plots during office hours.  
-
-**Conclusion**
-
-- To what extent did you answer your research question? 
-
-- Was your hypothesis correct? 
-
-- With infinite time and resources, how would you go about better answering your research question?
-
-
+**What if my data was sampled in a biased way?**
+Consider reweighting. Identify demographic or contextual variables that may differ between your sample and the target population, then resample proportionally.

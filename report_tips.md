@@ -7,44 +7,42 @@ nav_exclude: true
 
 # Tips for formatting reports and code
 
-Keep in mind that there is no single correct format for writing a good report.
-Some students choose to use an R script and paste their results into Microsoft Word or Google Docs, while others choose to use an R Markdown file that can contain your code and written answers all in one place.
-Please reach out to the teaching team if you have any concerns about report formatting.
+There is no single correct format. Most students write their analysis in a Jupyter notebook (.ipynb) and export to PDF, or write in a separate document and include figures from their code. Reach out to the teaching team with any formatting concerns.
 
 ## Report tips
 
-*  **A longer answer does not always mean a better answer.** Keep your responses meaningful and concise. Do not include extraneous results or findings in your report. Make it easy for the teaching team to follow your line of thinking.
+*  **Shorter is often better.** Keep responses meaningful and concise. Do not include extraneous results. Make it easy for the teaching team to follow your reasoning.
 
-*	**Make sure plots convey insightful findings.** A simple plot with a clear insight is a lot more valuable than a complex plot that does not convey a clear insight.
+*	**Make plots count.** A simple plot with a clear insight is more valuable than a complex plot that does not convey a clear message. Aim for 4–6 well-designed figures per report.
 
-*   **Make it easy for us to read your report.** Bullet points and concise comments are encouraged. Rather than hide results in long, single-spaced paragraphs, present them in a table with clear labels. Make sure your handwritten results are legible and easy to follow. If you paste images into your PDF, make them BIG. We should not need to zoom in too far to see your work.
+*   **Make it easy to read.** Bullet points and concise comments are encouraged. Present numerical results in tables with clear labels rather than burying them in paragraphs.
 
-* **Avoid using screenshots where possible**, as they typically have low resolution. Instead, when possible, use `ggsave()` to save images of your plots. When using `ggsave()`, you should use the minimum image resolution needed to easily understand your plot. 
+* **Save figures programmatically** using `plt.savefig('figure.png', dpi=150, bbox_inches='tight')` rather than screenshots, which have low resolution.
 
-*	**All results should be printed and clearly marked in your report PDF.** **We should not have to refer to your code to find your results.** If you decide to store a result in a variable, print the value of the variable in your code AND in the report PDF. Consider underlining, boxing, bolding, and/or highlighting your key results. 
+*	**All results should be clearly marked in your report PDF.** We should not have to refer to your code to find your results. Consider bolding or highlighting key numbers.
 
-*   **Three decimals places of accuracy is typically all that's needed.** Convert answers from scientific notation (3.5e-2) to standard notation (0.035). You can write the following at the top of your R code to do this automatically:
+*   **Three decimal places is typically sufficient.** Convert scientific notation (3.5e-2) to standard notation (0.035). In Python:
 
+```python
+import numpy as np
+np.set_printoptions(precision=3, suppress=True)
+pd.set_option('display.float_format', '{:.3f}'.format)
 ```
-options(scipen = 999)
-options(digits = 3)
-```
 
-*  **Keep file sizes small.** Your submitted report should generally be less than 5MB, though there may be rare exceptions. 
+*  **Keep file sizes small.** Reports should generally be under 5 MB.
 
-*  **Before submitting, make sure to review your report PDF**. The report should be structured, clear, and concise, and all problems should be addressed. Make sure that all relevant results are included in the report (and not buried in your code!). 
+*  **Review your PDF before submitting.** Ensure the report is structured, clear, and complete. All relevant results should be in the report, not buried in code.
 
-*   **Submit a single report PDF.** Your submissions should only contain two files: your report PDF and your code. There are many free tools available for combining PDFs into a single PDF.
+*   **Submit a single report PDF** plus your code (notebook or script). Use free tools to combine multiple PDFs if needed.
 
 ## Code tips
 
-* In your code, do your best to **follow the [tidyverse style conventions](https://style.tidyverse.org/)**. Note that we will not dock points for code that runs correctly but isn't formatted nicely. However, you will find that your code is a lot easier to debug when it's formatted nicely.
+* **Follow PEP 8 style conventions.** We will not dock points for working code that is not perfectly formatted, but clean code is easier to debug.
 
-*  **Do not include `install.packages(),` `View()`, or `ggsave()` in your submitted script.** You are welcome to leave these functions in your code so long as you `#comment them out`. Note that if you run `install.packages("tidyverse")` once on your machine, you (generally) never need to run it again.
+*  **Do not include `pip install` commands in your submitted notebook.** Comment them out or remove them.
 
-*  **Clear your environment and re-run your code before submitting**. Many simple bugs can be avoided by simply re-running code and catching typos. 
+*  **Restart your kernel and re-run all cells before submitting.** Many bugs are caught by simply re-running from scratch.
 
-*  **Make your code easy to read.** Organize your code into logical chunks, add space between chunks, and add comments to explain what each chunk is doing.  Don't let code go past the vertical line in the RStudio scripting pane (though a few extra spaces here and there is fine). This vertical line typically denotes somewhere between 70 and 80 characters from the left side of the page.  
+*  **Make your code readable.** Organize into logical sections with markdown headers in your notebook. Add brief comments to explain non-obvious steps. Keep lines under 80 characters.
 
-*   **Use the original file names for imported data, and import the data locally.** For example, HW2 code should import **`X.txt`**, not `hw2-data.txt` or `MS&E-125-data.txt`. Importing locally with the original name makes it a lot easier to re-run your code. 
-
+*   **Use the original filenames for imported data and load from a relative path.** For example, use `pd.read_csv('data/listings.csv')`, not an absolute path or a renamed file.
