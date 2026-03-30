@@ -51,13 +51,13 @@ While the books above are free, note that the MS&E department has an
 [Opportunity Fund](https://forms.gle/QQKJArhELRVYeFnr7)
 through which students may request financial assistance to purchase any necessary course materials.
 
-## Study groups
+<!-- ## Study groups
 
 We encourage you to work together in groups to solidify your understanding of the course material. 
 If you would like assistance forming a study group, please complete [this form](https://forms.gle/1xfXRZ968Xh9XEMY8) 
 by Thursday, April 2 at 9pm PT. 
 Our goal is to form the study groups the following day, 
-so students can begin discussing the first homework assignment.
+so students can begin discussing the first homework assignment. -->
 
 ## Computing environment
 
@@ -70,7 +70,10 @@ Stanford is committed to providing equal educational opportunities for students 
 
 If you experience disability, please register with the Office of Accessible Education (OAE). Professional staff will evaluate your needs, support appropriate and reasonable accommodations, and prepare an Academic Accommodation Letter for faculty. To get started, or to re-initiate services, please visit [oae.stanford.edu](https://oae.stanford.edu).
 
-If you already have an Academic Accommodation Letter, we invite you to share your letter with us. Academic Accommodation Letters should be shared at the earliest possible opportunity so we may partner with you and OAE to identify any barriers to access and inclusion that might be encountered in your experience of this course.
+If you already have an Academic Accommodation Letter, and plan to use it for a give assignment, you must [provide your accommodation letter and inform the instructor (using this webform)](https://docs.google.com/forms/d/e/1FAIpQLSfNDYk9PgTU-XUdYrz3kt2_2bdFSk8LbSM2Hhd-hijEdJJV3A/viewform?usp=publish-editor) by:
+- 10 calendar days prior to a quiz date.
+- No later than May 25th, 2026, at 5:00 pm for the final exam.
+Academic Accommodation Letters should be shared at the earliest possible opportunity so we may partner with you and OAE to identify any barriers to access and inclusion that might be encountered in your experience of this course.
 
 ## Diversity statement
 

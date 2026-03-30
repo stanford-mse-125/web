@@ -1,3 +1,13 @@
+---
+layout: page
+title: About
+description: >-
+    Course policies and information.
+---
+
+# About
+{:.no_toc}
+
 # AI Tools for This Course: Setup Guide
 
 This course encourages you to use AI assistants to help you write, debug, and understand code. You do **not** need to be an experienced programmer — these tools are designed to meet you where you are.

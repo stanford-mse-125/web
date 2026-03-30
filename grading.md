@@ -29,8 +29,9 @@ and to join lectures in person when possible.
 
 ### Flexible weighting for quizzes and the final exam
 
-Students who are unable to attend quizzes or the final exam may shift
-the weight onto the other component.
+The course offers a flexible grading schema that automatically
+shifts the weight of the course off of quizzes or exams you miss
+onto those you take. 
 The table below shows a few examples:
 
 | Quizzes missed | Skip final? | Quizzes weight | Final exam weight |
@@ -40,6 +41,10 @@ The table below shows a few examples:
 | 4 (of 8) | No | 12.5% | 32.5% |
 | All | No | 0% | 45% |
 | 0 | Yes | 45% | 0% |
+
+To get full credit in the course, 
+you'll need to take the exam or at least 7 of the quizzes.
+If you take both the final and at least 7 quizzes, then your score on both will be max(standardized quiz score, standardized final score). So you can't hurt your grade by taking the final.
 
 ## Homework
 
@@ -154,3 +159,6 @@ If you plan to use your OAE approved exam accommodations for a specific assessme
 You only need to submit your letter once per quarter.
 For urgent OAE-related accommodation needs that arise after the deadline, please consult your OAE adviser.
 If you are not yet registered with OAE, contact the office directly at oae-contactus@stanford.edu.
+
+If your require an accommodation other than 1.5x time on exams, you
+will need to book directly with OAE, following [these instructions](https://oae.stanford.edu/ctc).

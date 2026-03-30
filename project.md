@@ -28,7 +28,7 @@ Any data-driven investigation is fair game. Past teams have studied athletic per
 | Proposal | Thu May 1 | [Google Form (TBD)]() |
 | Midterm report | Fri May 15 | 4-page PDF |
 | Final report + peer eval | Mon Jun 8, 9:00 AM | 8-page PDF + individual peer form |
-| In-person presentation | Jun 3–17 (scheduled) | ~10 min per team |
+| In-person presentation | May 27 – Jun 12 (scheduled) | ~20 min per team |
 
 ## Team formation
 
