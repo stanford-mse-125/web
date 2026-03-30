@@ -1,14 +1,12 @@
 ---
 layout: page
-title: About
+title: AI Tools
 description: >-
     Course policies and information.
 ---
 
-# About
-{:.no_toc}
-
 # AI Tools for This Course: Setup Guide
+{:.no_toc}
 
 This course encourages you to use AI assistants to help you write, debug, and understand code. You do **not** need to be an experienced programmer — these tools are designed to meet you where you are.
 
@@ -51,6 +49,7 @@ print(response)
 ## 2. AI Chat Assistants (Free — Great for Learning and Debugging)
 
 Three major AI assistants offer free chat tiers that are excellent for asking data science questions, understanding concepts, debugging code, and getting feedback on your analysis. Think of them as an always-available TA. At the free tier, they are functionally equivalent — pick whichever you like, or use all three.
+You can also try out a variety at the [Stanford AI Playground](https://aiplayground-prod2.stanford.edu/login).
 
 | Assistant | Website | Sign Up |
 |-----------|---------|---------|
