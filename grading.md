@@ -162,3 +162,8 @@ If you are not yet registered with OAE, contact the office directly at oae-conta
 
 If your require an accommodation other than 1.5x time on exams, you
 will need to book directly with OAE, following [these instructions](https://oae.stanford.edu/ctc).
+
+## Remote exams for athletes
+
+If you are a student athlete and need Stanford Athletics 
+to remotely administer a quiz or exam for MS&E 125 (Spring 2026) due to an official university-sanctioned athletic event, use ]this form](https://docs.google.com/forms/d/e/1FAIpQLSfNEnKbzvP9GVup7paXulU2sar_56c-FCCQOga1UGJhyW5-FA/viewform?usp=publish-editor) to submit your request.

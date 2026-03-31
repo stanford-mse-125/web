@@ -20,14 +20,14 @@ Grades will be posted on [Gradescope](https://www.gradescope.com/courses/1278586
 * The best way to communicate is in person, after lecture or during office hours. 
 Real-time meetings are more efficient, more effective, and more fun.
 
-* Direct email to instructors should *only* be used to coordinate meetings or submit letters from OAE.
+* Direct email to instructors should only be used to coordinate meetings.
 
 * If you do send an email to an instructor, assume that it will take about three days
   to receive a reply. If you need a reply sooner, you can ask after lecture and during office hours.
   Emails about issues that could be handled in person might not receive a
   response.
 
-* Discuss grades only in person, *not* by email or on Ed.
+* Discuss grades only in person.
 
 ## Instructors
 

@@ -23,16 +23,16 @@ Any data-driven investigation is fair game. Past teams have studied athletic per
 
 | Deliverable | Due | Format |
 |---|---|---|
-| Group formation | Thu Apr 17 | [Project Group Form](https://docs.google.com/forms/d/e/1FAIpQLSfg1A07nIHVrNfDzTGc8mVokXQIINTXzzf2KUM5gQd6YSFrIQ/viewform?usp=header) |
+| Group formation | Fri Apr 17 | [Project Group Form](https://docs.google.com/forms/d/e/1FAIpQLSfg1A07nIHVrNfDzTGc8mVokXQIINTXzzf2KUM5gQd6YSFrIQ/viewform?usp=header) |
 | TA meeting | Before May 1 | 15-min slot with course staff |
-| Proposal | Thu May 1 | [Project Proposal Form](https://docs.google.com/forms/d/e/1FAIpQLSfa-vTIvn_M-3aSCJuPIW7qAzRtX8J2gPrhaUSeo1Xz1VCVYA/viewform?usp=publish-editor) |
+| Proposal | Fri May 1 | [Project Proposal Form](https://docs.google.com/forms/d/e/1FAIpQLSfa-vTIvn_M-3aSCJuPIW7qAzRtX8J2gPrhaUSeo1Xz1VCVYA/viewform?usp=publish-editor) |
 | Midterm report | Fri May 15 | 4-page PDF |
 | Final report + peer eval | Mon Jun 8, 9:00 AM | 8-page PDF + individual peer form |
 | In-person presentation | May 27 – Jun 12 (scheduled) | ~20 min per team |
 
 ## Team formation
 
-Project teams consist of 2, 3, or 4 students. Submit your team via [Project Group Form](https://docs.google.com/forms/d/e/1FAIpQLSfg1A07nIHVrNfDzTGc8mVokXQIINTXzzf2KUM5gQd6YSFrIQ/viewform?usp=header) by **Thursday, April 17**. If you need help finding teammates, post on Ed.
+Project teams consist of 2, 3, or 4 students. Submit your team via [Project Group Form](https://docs.google.com/forms/d/e/1FAIpQLSfg1A07nIHVrNfDzTGc8mVokXQIINTXzzf2KUM5gQd6YSFrIQ/viewform?usp=header) by **Friday, April 17**. If you need help finding teammates, post on Ed.
 
 We expect effort to scale with team size: a 4-person team should produce roughly twice the depth or breadth of a 2-person team. Peer evaluations factor into individual grades.
 
@@ -56,7 +56,7 @@ Each team member submits an individual peer evaluation. Peer evaluations will be
 
 ## In-person presentation (Jun 3–17)
 
-Each team gives a ~10-minute presentation to the course staff, scheduled during the final two weeks of the quarter (Jun 3–17). Sign-up slots will be posted in week 8. All team members must attend.
+Each team gives a ~20-minute presentation to the course staff, scheduled during the final two weeks of the quarter (May 27 – Jun 12). Sign-up slots will be posted in week 8. All team members must attend.
 
 The presentation should cover your research question, key findings, and one methodological choice you found interesting or surprising. Slides are optional — walking through your report is fine.
 

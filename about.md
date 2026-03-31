@@ -64,6 +64,14 @@ so students can begin discussing the first homework assignment. -->
 Most course assignments will be completed in Jupyter notebooks in the Python programming language.
 We will demonstrate how to set up Google Colab as a computing environment for the class.
 
+## Devices in class
+
+Laptops are permitted only in the back two rows of the classroom. iPads, tablets, and phones may be used anywhere, but only for notetaking or following along with in-class demos. Please keep all other devices put away during class.
+
+## Lecture recordings
+
+Classes will be recorded and made available after each session. However, we make no promises about recording quality — audio or video may be incomplete, and some in-class demos or discussions may not be captured well. We prioritize the experience of students who are present in class. Recordings are a convenience, not a substitute for attendance.
+
 ## Access and accommodations
 
 Stanford is committed to providing equal educational opportunities for students with disabilities. 
