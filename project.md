@@ -23,16 +23,16 @@ Any data-driven investigation is fair game. Past teams have studied athletic per
 
 | Deliverable | Due | Format |
 |---|---|---|
-| Group formation | Thu Apr 17 | [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSfg1A07nIHVrNfDzTGc8mVokXQIINTXzzf2KUM5gQd6YSFrIQ/viewform?usp=header) |
+| Group formation | Thu Apr 17 | [Project Group Form](https://docs.google.com/forms/d/e/1FAIpQLSfg1A07nIHVrNfDzTGc8mVokXQIINTXzzf2KUM5gQd6YSFrIQ/viewform?usp=header) |
 | TA meeting | Before May 1 | 15-min slot with course staff |
-| Proposal | Thu May 1 | [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSfa-vTIvn_M-3aSCJuPIW7qAzRtX8J2gPrhaUSeo1Xz1VCVYA/viewform?usp=publish-editor) |
+| Proposal | Thu May 1 | [Project Proposal Form](https://docs.google.com/forms/d/e/1FAIpQLSfa-vTIvn_M-3aSCJuPIW7qAzRtX8J2gPrhaUSeo1Xz1VCVYA/viewform?usp=publish-editor) |
 | Midterm report | Fri May 15 | 4-page PDF |
 | Final report + peer eval | Mon Jun 8, 9:00 AM | 8-page PDF + individual peer form |
 | In-person presentation | May 27 – Jun 12 (scheduled) | ~20 min per team |
 
 ## Team formation
 
-Project teams consist of 2, 3, or 4 students. Submit your team via the Google Form by **Thursday, April 17**. If you need help finding teammates, post on Ed.
+Project teams consist of 2, 3, or 4 students. Submit your team via [Project Group Form](https://docs.google.com/forms/d/e/1FAIpQLSfg1A07nIHVrNfDzTGc8mVokXQIINTXzzf2KUM5gQd6YSFrIQ/viewform?usp=header) by **Thursday, April 17**. If you need help finding teammates, post on Ed.
 
 We expect effort to scale with team size: a 4-person team should produce roughly twice the depth or breadth of a 2-person team. Peer evaluations factor into individual grades.
 
@@ -42,7 +42,7 @@ Every team must meet with a member of the course staff for 15 minutes before the
 
 ## Proposal (due Thu May 1)
 
-After your TA meeting, submit your proposal via [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSfa-vTIvn_M-3aSCJuPIW7qAzRtX8J2gPrhaUSeo1Xz1VCVYA/viewform?usp=publish-editor). The course staff will provide detailed comments. Your proposal should describe your research question, planned datasets, and intended methods.
+After your TA meeting, submit your proposal via [Project Proposal Form](https://docs.google.com/forms/d/e/1FAIpQLSfa-vTIvn_M-3aSCJuPIW7qAzRtX8J2gPrhaUSeo1Xz1VCVYA/viewform?usp=publish-editor). The course staff will provide detailed comments. Your proposal should describe your research question, planned datasets, and intended methods.
 
 ## Midterm report (due Fri May 15)
 
