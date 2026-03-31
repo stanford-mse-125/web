@@ -23,9 +23,9 @@ Any data-driven investigation is fair game. Past teams have studied athletic per
 
 | Deliverable | Due | Format |
 |---|---|---|
-| Group formation | Thu Apr 17 | [Google Form (TBD)]() |
+| Group formation | Thu Apr 17 | [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSfg1A07nIHVrNfDzTGc8mVokXQIINTXzzf2KUM5gQd6YSFrIQ/viewform?usp=header) |
 | TA meeting | Before May 1 | 15-min slot with course staff |
-| Proposal | Thu May 1 | [Google Form (TBD)]() |
+| Proposal | Thu May 1 | [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSfa-vTIvn_M-3aSCJuPIW7qAzRtX8J2gPrhaUSeo1Xz1VCVYA/viewform?usp=publish-editor) |
 | Midterm report | Fri May 15 | 4-page PDF |
 | Final report + peer eval | Mon Jun 8, 9:00 AM | 8-page PDF + individual peer form |
 | In-person presentation | May 27 – Jun 12 (scheduled) | ~20 min per team |
@@ -38,11 +38,11 @@ We expect effort to scale with team size: a 4-person team should produce roughly
 
 ## Required TA meeting (before May 1)
 
-Every team must meet with a member of the course staff for 15 minutes before the proposal deadline. At least two team members must attend. Sign up for a slot on the [scheduling sheet (TBD)]().
+Every team must meet with a member of the course staff for 15 minutes before the proposal deadline. At least two team members must attend. Sign up for a slot on the [scheduling sheet](https://docs.google.com/spreadsheets/d/1iKRNYsCut2WBU-jyK78trq16yJ3wpZEi/edit?usp=sharing&ouid=112240009107036111267&rtpof=true&sd=true).
 
 ## Proposal (due Thu May 1)
 
-After your TA meeting, submit your proposal via [Google Form (TBD)](). The course staff will provide detailed comments. Your proposal should describe your research question, planned datasets, and intended methods.
+After your TA meeting, submit your proposal via [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSfa-vTIvn_M-3aSCJuPIW7qAzRtX8J2gPrhaUSeo1Xz1VCVYA/viewform?usp=publish-editor). The course staff will provide detailed comments. Your proposal should describe your research question, planned datasets, and intended methods.
 
 ## Midterm report (due Fri May 15)
 
