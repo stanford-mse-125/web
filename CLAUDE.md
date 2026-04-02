@@ -12,6 +12,7 @@
 - `assets/images/` — staff photos, logos
 
 ## Local Preview
+First time: `bundle install` to install Jekyll dependencies.
 ```bash
 bundle exec jekyll serve
 ```
