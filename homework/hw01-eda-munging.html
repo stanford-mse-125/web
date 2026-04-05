@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.27">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Homework 1: Exploratory Data Analysis and Data Munging</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="hw01-eda-munging_files/libs/clipboard/clipboard.min.js"></script>
+<script src="hw01-eda-munging_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="hw01-eda-munging_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="hw01-eda-munging_files/libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="hw01-eda-munging_files/libs/quarto-html/popper.min.js"></script>
+<script src="hw01-eda-munging_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="hw01-eda-munging_files/libs/quarto-html/anchor.min.js"></script>
+<link href="hw01-eda-munging_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="hw01-eda-munging_files/libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="hw01-eda-munging_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="hw01-eda-munging_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="hw01-eda-munging_files/libs/bootstrap/bootstrap-d6a003b94517c951b2d65075d42fb01b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="quarto-light">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#setup" id="toc-setup" class="nav-link active" data-scroll-target="#setup">Setup</a>
+  <ul class="collapse">
+  <li><a href="#submission" id="toc-submission" class="nav-link" data-scroll-target="#submission">Submission</a></li>
+  </ul></li>
+  <li><a href="#problem-1-first-look" id="toc-problem-1-first-look" class="nav-link" data-scroll-target="#problem-1-first-look">Problem 1: First look</a></li>
+  <li><a href="#problem-2-cleaning-the-wage-data" id="toc-problem-2-cleaning-the-wage-data" class="nav-link" data-scroll-target="#problem-2-cleaning-the-wage-data">Problem 2: Cleaning the wage data</a></li>
+  <li><a href="#problem-3-employer-analysis" id="toc-problem-3-employer-analysis" class="nav-link" data-scroll-target="#problem-3-employer-analysis">Problem 3: Employer analysis</a></li>
+  <li><a href="#problem-4-ai-assisted-analysis" id="toc-problem-4-ai-assisted-analysis" class="nav-link" data-scroll-target="#problem-4-ai-assisted-analysis">Problem 4: AI-assisted analysis</a></li>
+  <li><a href="#problem-5-missing-data-and-joins" id="toc-problem-5-missing-data-and-joins" class="nav-link" data-scroll-target="#problem-5-missing-data-and-joins">Problem 5: Missing data and joins</a></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="hw01-eda-munging.ipynb" download="hw01-eda-munging.ipynb"><i class="bi bi-journal-code"></i>Jupyter</a></li></ul></div></nav>
+</div>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Homework 1: Exploratory Data Analysis and Data Munging</h1>
+<p class="subtitle lead">MSE 125 — Spring 2026</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">Invalid Date</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="setup" class="level2">
+<h2 class="anchored" data-anchor-id="setup">Setup</h2>
+<p>This homework covers Lectures 1–3: exploratory data analysis, visualization, and data munging. You will work with H-1B visa application data from the U.S. Department of Labor (FY2024). Every year, employers file Labor Condition Applications (LCAs) to sponsor workers for H-1B visas — each row in this dataset is one such filing.</p>
+<p>The <a href="https://www.dol.gov/agencies/eta/foreign-labor/performance">Office of Foreign Labor Certification</a> publishes the data. The setup cell below downloads it directly from the DOL website. The file is about 80 MB, so the download may take a minute. If the download fails, ask a TA for a local copy.</p>
+<p>You are encouraged to use AI coding assistants (Claude Code, Copilot, ChatGPT) throughout this homework. Problem 4 specifically asks you to document how AI handles the data.</p>
+<div id="8d64f3dc" class="cell" data-execution_count="1">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> warnings</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>warnings.filterwarnings(<span class="st">'ignore'</span>)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>sns.set_style(<span class="st">'whitegrid'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div id="5e179915" class="cell" data-execution_count="2">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Download H-1B LCA disclosure data (FY2024 Q4) from the Department of Labor</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> os, urllib.request</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>DATA_URL <span class="op">=</span> <span class="st">"https://www.dol.gov/sites/dolgov/files/ETA/oflc/pdfs/LCA_Disclosure_Data_FY2024_Q4.xlsx"</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>LOCAL_FILE <span class="op">=</span> <span class="st">"LCA_Disclosure_Data_FY2024_Q4.xlsx"</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="kw">not</span> os.path.exists(LOCAL_FILE):</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Downloading H-1B data from DOL (~80 MB, may take a minute)..."</span>)</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>    urllib.request.urlretrieve(DATA_URL, LOCAL_FILE)</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Download complete."</span>)</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Select the columns we need (the full file has 97 columns)</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>USE_COLS <span class="op">=</span> [</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>    <span class="st">'CASE_NUMBER'</span>, <span class="st">'CASE_STATUS'</span>, <span class="st">'RECEIVED_DATE'</span>, <span class="st">'DECISION_DATE'</span>,</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>    <span class="st">'VISA_CLASS'</span>, <span class="st">'JOB_TITLE'</span>, <span class="st">'SOC_CODE'</span>, <span class="st">'SOC_TITLE'</span>,</span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>    <span class="st">'FULL_TIME_POSITION'</span>, <span class="st">'BEGIN_DATE'</span>, <span class="st">'END_DATE'</span>,</span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>    <span class="st">'EMPLOYER_NAME'</span>, <span class="st">'EMPLOYER_CITY'</span>, <span class="st">'EMPLOYER_STATE'</span>, <span class="st">'EMPLOYER_POSTAL_CODE'</span>,</span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>    <span class="st">'NAICS_CODE'</span>, <span class="st">'AGENT_REPRESENTING_EMPLOYER'</span>,</span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>    <span class="st">'SECONDARY_ENTITY'</span>, <span class="st">'SECONDARY_ENTITY_BUSINESS_NAME'</span>,</span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>    <span class="st">'WORKSITE_CITY'</span>, <span class="st">'WORKSITE_STATE'</span>, <span class="st">'WORKSITE_POSTAL_CODE'</span>,</span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>    <span class="st">'WAGE_RATE_OF_PAY_FROM'</span>, <span class="st">'WAGE_RATE_OF_PAY_TO'</span>, <span class="st">'WAGE_UNIT_OF_PAY'</span>,</span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>    <span class="st">'PREVAILING_WAGE'</span>, <span class="st">'PW_UNIT_OF_PAY'</span>, <span class="st">'PW_WAGE_LEVEL'</span>,</span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>    <span class="st">'H_1B_DEPENDENT'</span>, <span class="st">'WILLFUL_VIOLATOR'</span>, <span class="st">'SUPPORT_H1B'</span>, <span class="st">'STATUTORY_BASIS'</span>,</span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>]</span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>h1b <span class="op">=</span> pd.read_excel(LOCAL_FILE, engine<span class="op">=</span><span class="st">'openpyxl'</span>, usecols<span class="op">=</span>USE_COLS)</span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Loaded </span><span class="sc">{</span><span class="bu">len</span>(h1b)<span class="sc">:,}</span><span class="ss"> rows x </span><span class="sc">{</span><span class="bu">len</span>(h1b.columns)<span class="sc">}</span><span class="ss"> columns"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loaded 120,897 rows x 32 columns</code></pre>
+</div>
+</div>
+<p>Each row is one LCA filing. The dataset contains about 120,000 filings covering employer information, job details, wages, and work locations.</p>
+<section id="submission" class="level3">
+<h3 class="anchored" data-anchor-id="submission">Submission</h3>
+<p>Submit your completed Jupyter notebook (<code>.ipynb</code>) on Gradescope. Keep all code cells and their output visible. Write interpretations in markdown cells, not code comments.</p>
+<hr>
+</section>
+</section>
+<section id="problem-1-first-look" class="level2">
+<h2 class="anchored" data-anchor-id="problem-1-first-look">Problem 1: First look</h2>
+<p><strong>Part (a):</strong> How many rows and columns does the dataset have? Print the first few rows and examine the column names. Which columns relate to wages? Identify two columns whose pandas <code>dtype</code> does not match their real-world meaning (e.g., a column stored as a number that is really a category, or a column stored as a string that should be a date).</p>
+<p><strong>Part (b):</strong> Before computing anything, write down the range of values you would expect to see in this column if it contained annual salaries. Then summarize <code>WAGE_RATE_OF_PAY_FROM</code> (mean, median, min, max, standard deviation). Do the numbers match your expectations? Identify at least two things that look suspicious, and explain why they caught your attention.</p>
+<p><strong>Part (c):</strong> Examine the <code>WAGE_UNIT_OF_PAY</code> column. How many distinct values does it contain, and what fraction of rows falls in each category? Explain how this column relates to the suspicious statistics you found in part (b).</p>
+<hr>
+</section>
+<section id="problem-2-cleaning-the-wage-data" class="level2">
+<h2 class="anchored" data-anchor-id="problem-2-cleaning-the-wage-data">Problem 2: Cleaning the wage data</h2>
+<p>A journalist asks you: <em>“What does the typical H-1B worker earn?”</em> To answer this question, you need a clean annual salary for every filing.</p>
+<p><strong>Part (a):</strong> Create a new column called <code>annual_wage</code> that converts all wages to an annual basis. Use the standard conversion factors: hourly × 2,080 (40 hrs/wk × 52 wks), weekly × 52, biweekly × 26, monthly × 12, and yearly wages as-is. How many rows have each wage unit?</p>
+<p><em>Hint:</em> You can use <code>df['WAGE_UNIT_OF_PAY'].map({'Year': 1, 'Hour': 2080, ...})</code> to look up the conversion factor for each row, then multiply.</p>
+<p><strong>Part (b):</strong> Print the summary statistics for <code>annual_wage</code>. Are there still problems? Identify any remaining outliers — propose reasonable upper and lower thresholds and justify your choices. How many rows do your thresholds flag? Choose a strategy for handling them (remove, cap, or something else) and explain why.</p>
+<p><strong>Part (c):</strong> Make two plots: (1) a histogram of <code>annual_wage</code> before outlier removal and (2) a histogram after your cleaning. Use appropriate axis labels, titles, and bin widths. In 2–3 sentences, describe the shape of the cleaned wage distribution (center, spread, skewness) and report the median annual wage.</p>
+<p><strong>Part (d):</strong> Answer the journalist’s question in one paragraph. Report the median wage and briefly explain why the median is more appropriate than the mean here. Mention any caveats about what this number does and does not represent (e.g., these are <em>offered</em> wages for visa applicants, not all U.S. workers).</p>
+<p><strong>Note for later problems:</strong> Use your cleaned <code>annual_wage</code> (with outliers removed) for all wage summaries and comparisons. Use all filings for counts unless a problem says otherwise.</p>
+<hr>
+</section>
+<section id="problem-3-employer-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="problem-3-employer-analysis">Problem 3: Employer analysis</h2>
+<p><strong>Part (a):</strong> Which employers file the most H-1B applications? Display the top 15 by filing count. Look carefully at the names — do any employers appear more than once under slightly different names? Identify at least one case. (Look at capitalization and spacing.)</p>
+<p><strong>Part (b):</strong> Write code to standardize the employer names you identified in part (a). A simple approach suffices (e.g., <code>.str.upper().str.strip()</code>). After cleaning, recompute the top 15 and display the updated table. Did the rankings change? Identify one case where it is ambiguous whether two similar names refer to the same employer (e.g., names that differ by “LLC” vs.&nbsp;“Inc”). What additional information would you need to decide whether to merge them?</p>
+<p><strong>Part (c):</strong> Create a horizontal bar chart showing the top 15 employers by filing count (after cleaning). For each employer, also show the median annual wage (use the cleaned wage from Problem 2). You may use two subplots, a color encoding, or annotations — choose whatever makes the comparison clear.</p>
+<p><strong>Part (d):</strong> An immigration policy analyst claims that consulting firms are “gaming” the H-1B system by filing high volumes of applications at below-market wages. Based on your chart, is this characterization fair? What does the data support, what does it not support, and what additional information would you need to evaluate the claim?</p>
+<hr>
+</section>
+<section id="problem-4-ai-assisted-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="problem-4-ai-assisted-analysis">Problem 4: AI-assisted analysis</h2>
+<p>Open an AI assistant (Claude, ChatGPT, Copilot, or another tool of your choice). Paste the output of the following into your chat, then ask the AI: <em>“Which states offer the highest H-1B salaries? Show me the top 10 with a bar chart.”</em></p>
+<div id="c055a326" class="cell" data-execution_count="3">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Run this cell, then copy the printed output into your AI assistant</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(h1b.dtypes.to_string())</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">---</span><span class="ch">\n</span><span class="st">"</span>)</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(h1b.head(<span class="dv">20</span>).to_string())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>CASE_NUMBER                                  str
+CASE_STATUS                                  str
+RECEIVED_DATE                     datetime64[us]
+DECISION_DATE                     datetime64[us]
+VISA_CLASS                                   str
+JOB_TITLE                                    str
+SOC_CODE                                     str
+SOC_TITLE                                    str
+FULL_TIME_POSITION                           str
+BEGIN_DATE                        datetime64[us]
+END_DATE                          datetime64[us]
+EMPLOYER_NAME                                str
+EMPLOYER_CITY                             object
+EMPLOYER_STATE                               str
+EMPLOYER_POSTAL_CODE                         str
+NAICS_CODE                                 int64
+AGENT_REPRESENTING_EMPLOYER                  str
+SECONDARY_ENTITY                             str
+SECONDARY_ENTITY_BUSINESS_NAME               str
+WORKSITE_CITY                             object
+WORKSITE_STATE                               str
+WORKSITE_POSTAL_CODE                         str
+WAGE_RATE_OF_PAY_FROM                    float64
+WAGE_RATE_OF_PAY_TO                      float64
+WAGE_UNIT_OF_PAY                             str
+PREVAILING_WAGE                          float64
+PW_UNIT_OF_PAY                               str
+PW_WAGE_LEVEL                                str
+H_1B_DEPENDENT                               str
+WILLFUL_VIOLATOR                             str
+SUPPORT_H1B                                  str
+STATUTORY_BASIS                              str
+
+---
+
+           CASE_NUMBER            CASE_STATUS RECEIVED_DATE DECISION_DATE VISA_CLASS                                                     JOB_TITLE    SOC_CODE                                    SOC_TITLE FULL_TIME_POSITION BEGIN_DATE   END_DATE                            EMPLOYER_NAME    EMPLOYER_CITY EMPLOYER_STATE EMPLOYER_POSTAL_CODE  NAICS_CODE AGENT_REPRESENTING_EMPLOYER SECONDARY_ENTITY SECONDARY_ENTITY_BUSINESS_NAME     WORKSITE_CITY WORKSITE_STATE WORKSITE_POSTAL_CODE  WAGE_RATE_OF_PAY_FROM  WAGE_RATE_OF_PAY_TO WAGE_UNIT_OF_PAY  PREVAILING_WAGE PW_UNIT_OF_PAY PW_WAGE_LEVEL H_1B_DEPENDENT WILLFUL_VIOLATOR SUPPORT_H1B                                                                          STATUTORY_BASIS
+0   I-200-24267-355975              Certified    2024-09-23    2024-09-30       H-1B                                      Project Manager - 2 - US  15-1211.00                    Computer Systems Analysts                  Y 2024-10-04 2027-10-01                          INFOSYS LIMITED       RICHARDSON             TX                75082      541511                          No               No                            NaN        Richardson             TX                75082              143666.00             143667.0             Year         143666.0           Year            IV            Yes               No         Yes                                                            $60,000 or higher annual wage
+1   I-200-24267-355875              Certified    2024-09-23    2024-09-30       H-1B  Senior Associate JC60 -Computer Systems Engineers/Architects  15-1299.08        Computer Systems Engineers/Architects                  Y 2024-10-01 2027-09-30   COGNIZANT TECHNOLOGY SOLUTIONS US CORP  COLLEGE STATION             TX                77845      541512                          No               No                            NaN          Sterling             VA                20165              111946.00                  NaN             Year         111946.0           Year            II            Yes               No         Yes  Both $60,000 or higher in annual wage and Masters Degree or higher in related specialty
+2   I-200-24267-356474              Certified    2024-09-23    2024-09-30       H-1B                                               Research Fellow  19-1042.00   Medical Scientists, Except Epidemiologists                  Y 2025-01-09 2025-07-08       National Institutes of Health, HHS         Bethesda             MD                20892       54171                          No               No                            NaN          Hamilton             MT                59840               93599.00                  NaN             Year          63128.0           Year             I             No               No         NaN                                                                                      NaN
+3   I-200-24267-357798              Certified    2024-09-23    2024-09-30       H-1B     Associate II JC65 - Computer Systems Engineers/Architects  15-1299.08        Computer Systems Engineers/Architects                  Y 2024-10-02 2027-10-01   COGNIZANT TECHNOLOGY SOLUTIONS US CORP  COLLEGE STATION             TX                77845      541512                          No               No                            NaN  Farmington Hills             MI                48336               83242.00                  NaN             Year          83242.0           Year            II            Yes               No         Yes  Both $60,000 or higher in annual wage and Masters Degree or higher in related specialty
+4   I-200-24267-356891              Certified    2024-09-23    2024-09-30       H-1B                                             Software Engineer  15-1252.00                          Software Developers                  Y 2024-10-01 2027-09-30                               Google LLC    Mountain View             CA                94043      541512                         Yes               No                            NaN            Austin             TX                78701              130000.00                  NaN             Year         108826.0           Year            II             No               No         NaN                                                                                      NaN
+5   I-200-24267-357267              Certified    2024-09-23    2024-09-30       H-1B                                            Software Developer  15-1252.00                          Software Developers                  Y 2024-09-27 2027-09-25                    Bonsai Solutions INC.           Dallas             TX                75247      541512                          No               No                            NaN             Manor             TX                78653              108826.00             108900.0             Year         108826.0           Year            II             No               No         NaN                                                                                      NaN
+6   I-200-24267-356397              Certified    2024-09-23    2024-09-30       H-1B                                           Senior VDC Engineer  17-2051.00                              Civil Engineers                  Y 2024-09-30 2027-09-29                           VIATechnik LLC          Chicago             IL                60601      541330                         Yes              Yes      Beneficiary’s Home Office     San Francisco             CA                94103              106200.00                  NaN             Year         106163.0           Year            II             No               No         NaN                                                                                      NaN
+7   I-200-24267-357563              Certified    2024-09-23    2024-09-30       H-1B                                              Network Engineer  15-1244.00  Network and Computer Systems Administrators                  Y 2024-09-24 2027-09-23  International Systems Technologies Inc.         Cranbury             NJ                08512      541512                         Yes              Yes                      Eli Lilly      Indianapolis             IN                46225               75000.00                  NaN             Year          58822.0           Year             I            Yes               No         Yes                                                            $60,000 or higher annual wage
+8   I-200-24267-356128              Certified    2024-09-23    2024-09-30       H-1B                     Accountants and Auditors - KBGFJG222595-2  13-2011.00                     Accountants and Auditors                  Y 2024-10-01 2027-09-30                   Ernst &amp; Young U.S. LLP         Secaucus             NJ                07094      541211                         Yes               No                            NaN          Secaucus             NJ                07094               78640.12                  NaN             Year          71136.0           Year             I             No               No         NaN                                                                                      NaN
+9   I-200-24267-356525              Certified    2024-09-23    2024-09-30       H-1B                           SENIOR ORACLE APPLICATION DEVELOPER  15-1252.00                          Software Developers                  Y 2024-10-05 2027-10-04                      SIRIUS XM RADIO LLC         NEW YORK             NY                10104      515111                         Yes               No                            NaN     LAWRENCEVILLE             NJ                08648              140000.00             160000.0             Year         129584.0           Year           III             No               No         NaN                                                                                      NaN
+10  I-200-24267-355983              Certified    2024-09-23    2024-09-30       H-1B                                          Software Engineering  15-1252.00                          Software Developers                  Y 2025-03-25 2028-03-24                    Microsoft Corporation          Redmond             WA                98052      513210                          No               No                            NaN           Redmond             WA                98052              145800.00                  NaN             Year         137259.0           Year            II             No               No         NaN                                                                                      NaN
+11  I-200-24267-357016              Certified    2024-09-23    2024-09-30       H-1B                                           Lead Data Scientist  15-2041.00                                Statisticians                  Y 2024-12-20 2027-12-19           Insurance Services Office, Inc      Jersey City             NJ                07310      524298                         Yes               No                            NaN       Jersey City             NJ                07310              133000.00                  NaN             Year         110822.0           Year            II             No               No         NaN                                                                                      NaN
+12  I-200-24267-357355              Certified    2024-09-23    2024-09-30       H-1B                                                  Project Lead  15-1299.09      Information Technology Project Managers                  Y 2024-10-01 2027-09-30                          HCL AMERICA INC      Santa Clara             CA                95054      541511                          No               No                            NaN              Cary             NC                27518               70678.00                  NaN             Year          70678.0           Year            II            Yes               No         Yes                                                            $60,000 or higher annual wage
+13  I-200-24267-357446              Certified    2024-09-23    2024-09-30       H-1B                                     Principal Design Engineer  17-2072.00       Electronics Engineers, Except Computer                  Y 2024-10-06 2027-10-05                Amber Semiconductor, Inc.           Dublin             CA                94568      334512                         Yes               No                            NaN            Dublin             CA                94568              190000.00                  NaN             Year         162344.0           Year           III             No               No         NaN                                                                                      NaN
+14  I-200-24267-357315              Certified    2024-09-23    2024-09-30       H-1B         Sr. Engineer, Application Development and Maintenance  15-1252.00                          Software Developers                  Y 2025-03-25 2028-03-24                         Cardinal Health            Dublin             OH                43017      423450                         Yes               No                            NaN            Dublin             OH                43017              138590.00             165000.0             Year         138590.0           Year            IV             No               No         NaN                                                                                      NaN
+15  I-200-24267-357925              Certified    2024-09-23    2024-09-30       H-1B       Sr. Mgr. JC45 - Information Technology Project Managers  15-1299.09      Information Technology Project Managers                  Y 2024-10-01 2027-09-30   COGNIZANT TECHNOLOGY SOLUTIONS US CORP  COLLEGE STATION             TX                77845      541512                          No              Yes               IRB Holding Corp     SANDY SPRINGS             GA                30328              123531.00                  NaN             Year         123531.0           Year            IV            Yes               No         Yes                                                            $60,000 or higher annual wage
+16  I-200-24267-355862              Certified    2024-09-23    2024-09-30       H-1B                                                  ECONOMIST II  19-3011.00                                   Economists                  Y 2024-09-24 2027-09-23                  AMAZON.COM SERVICES LLC        ARLINGTON             VA                22202      454110                         Yes               No                            NaN          NEW YORK             NY                10018              191600.00                  NaN             Year         127026.0           Year            II             No               No         NaN                                                                                      NaN
+17  I-200-23348-567022  Certified - Withdrawn    2023-12-14    2024-09-30       H-1B                                          Postdoctoral Scholar  17-2144.00                    Mechanical Engineers, R&amp;D                  Y 2024-04-01 2025-08-31                  Northwestern University         Evanston             IL                60208      611310                          No               No                            NaN          Evanston             IL                60208               65000.00                  NaN             Year          47570.0           Year             I             No               No         NaN                                                                                      NaN
+18  I-200-24267-356167              Certified    2024-09-23    2024-09-30       H-1B                               Technical Operations Engineer I  17-2112.00                         Industrial Engineers                  Y 2024-09-28 2027-09-26                Amazon Data Services, Inc          Seattle             WA                98121      518210                          No               No                            NaN          Manassas             VA                20109              124000.00                  NaN             Year          76565.0           Year             I             No               No         NaN                                                                                      NaN
+19  I-200-24267-358760              Certified    2024-09-23    2024-09-30       H-1B                                Director Regulatory Operations  13-1041.00                          Compliance Officers                  Y 2024-10-30 2027-10-29                   Navatio Pharma USA LLC     Graniteville             SC                29829        5419                          No               No                            NaN           Lathorp             CA                95330              223450.00                  NaN             Year         100090.0           Year            IV             No               No         NaN                                                                                      NaN</code></pre>
+</div>
+</div>
+<p><strong>Part (a):</strong> Copy the AI’s response (code and analysis) into your notebook and run the code. Does the analysis produce correct results? Identify at least two specific errors, questionable choices, or missing steps in the AI’s output. For each issue, explain: (i) what went wrong, (ii) why someone skimming the output might not notice, and (iii) how to fix it. (Hint: think about what you learned in Problems 1–2, and check which filings the AI included.)</p>
+<p><em>Grading note:</em> Different AI tools produce different outputs — we will grade on the quality of your diagnosis and correction, not on matching a specific bug list.</p>
+<p><strong>Part (b):</strong> Produce your own corrected version of the analysis. Compare your result to the AI’s. How did the errors affect the conclusions?</p>
+<p><strong>Part (c):</strong> Describe when the AI was most helpful and when human judgment was necessary. What checks would you recommend running any time you use AI on a new dataset?</p>
+<hr>
+</section>
+<section id="problem-5-missing-data-and-joins" class="level2">
+<h2 class="anchored" data-anchor-id="problem-5-missing-data-and-joins">Problem 5: Missing data and joins</h2>
+<p>A colleague proposes dropping all rows with any missing data before analyzing the H-1B filings. You want to check whether that would bias the results.</p>
+<p><strong>Part (a):</strong> How much data is missing? For each column, report the number and percentage of null values. Which columns have the most missing data? Pick two columns with moderate-to-high missingness and describe, in one sentence each, a plausible reason why those values might be missing.</p>
+<p><strong>Part (b):</strong> Choose one column with meaningful missingness (e.g., <code>SUPPORT_H1B</code>, <code>PW_WAGE_LEVEL</code>, or <code>STATUTORY_BASIS</code>). Split the data into two groups: rows where the column is missing and rows where it is present. Compare the <code>annual_wage</code> between the two groups using a histogram or density plot and a summary statistic (e.g., means or medians). Is there a notable difference?</p>
+<p><strong>Part (c):</strong> Based on your findings in part (b), do you think the missing values in the column you chose are MCAR (missing completely at random), MAR (missing at random, i.e., related to other observed variables), or MNAR (missing not at random)? There may not be a single correct answer — justify your reasoning in 2–3 sentences. What would go wrong if you simply dropped all rows with missing values before computing summary statistics?</p>
+<p><strong>Part (d):</strong> The <code>SOC_CODE</code> column contains Standard Occupational Classification codes (e.g., <code>15-1252.00</code> for “Software Developers”). The Bureau of Labor Statistics publishes national median wages by SOC code. The cell below loads a small reference table using 6-digit codes (without the <code>.00</code> suffix).</p>
+<div id="21505b04" class="cell" data-execution_count="4">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># BLS national median wages by SOC code (2023 OES survey, selected codes)</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>bls_wages <span class="op">=</span> pd.DataFrame({</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">'SOC_6'</span>: [<span class="st">'15-1252'</span>, <span class="st">'15-1211'</span>, <span class="st">'15-1299'</span>, <span class="st">'15-1244'</span>, <span class="st">'15-1232'</span>,</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>              <span class="st">'11-3021'</span>, <span class="st">'13-1111'</span>, <span class="st">'13-2011'</span>, <span class="st">'15-1241'</span>, <span class="st">'15-1256'</span>],</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">'SOC_TITLE_BLS'</span>: [<span class="st">'Software Developers'</span>, <span class="st">'Computer Systems Analysts'</span>,</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>                      <span class="st">'Computer Occupations, All Other'</span>, <span class="st">'Network/Systems Administrators'</span>,</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>                      <span class="st">'Computer User Support Specialists'</span>, <span class="st">'Computer and IS Managers'</span>,</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>                      <span class="st">'Management Analysts'</span>, <span class="st">'Accountants and Auditors'</span>,</span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>                      <span class="st">'Computer Network Architects'</span>, <span class="st">'Software Quality Assurance Analysts'</span>],</span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>    <span class="st">'national_median_wage'</span>: [<span class="dv">127260</span>, <span class="dv">99270</span>, <span class="dv">97430</span>, <span class="dv">90520</span>, <span class="dv">57890</span>,</span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>                             <span class="dv">164070</span>, <span class="dv">99410</span>, <span class="dv">79880</span>, <span class="dv">126900</span>, <span class="dv">98220</span>],</span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>A common critique of the H-1B program is that employers use it to hire foreign workers at wages below the domestic market rate. Join the H-1B filings with <code>bls_wages</code> to test this claim. (Hint: compare one <code>SOC_CODE</code> value to one <code>SOC_6</code> value to see what format mismatch you need to handle.) How many filings match a BLS code? For the matched rows, compare the H-1B <code>annual_wage</code> to the <code>national_median_wage</code> in a table or plot. Do H-1B filings tend to offer more or less than the national median for the same occupation? Does the answer differ across job categories? What caveats would you attach before drawing a policy conclusion?</p>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
