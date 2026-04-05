@@ -1,3 +1,7 @@
+---
+nav_exclude: true
+---
+
 # MSE 125 Course Website
 
 ## Structure
