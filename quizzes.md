@@ -12,3 +12,4 @@ Use these practice quizzes to prepare for the weekly in-class quizzes. Each prac
 | Quiz | Covers | Practice quiz |
 |------|--------|--------------|
 | 1 (Apr 8) | Lec 1--3: EDA, data munging | [Practice Quiz 1](practice-quiz01.html) |
+| 2 (Apr 15) | Lec 4--5: Regression, feature engineering | [Practice Quiz 2](practice-quiz02.html) |
