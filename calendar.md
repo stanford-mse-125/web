@@ -12,10 +12,10 @@ description: Course modules and dates
 | M April 6 | [Data munging + AI gotchas](https://stanford-mse-125.github.io/book/lec03-munging.html) | [slides](https://stanford-mse-125.github.io/slides/lec03-data-munging.html) | | [Pandas tutorials](https://pandas.pydata.org/docs/getting_started/index.html#getting-started) |
 | W April 8 | [Linear models: from data to geometry](https://stanford-mse-125.github.io/book/lec04-regression.html) | [slides](https://stanford-mse-125.github.io/slides/lec04-linear-models.html) | [Quiz 1](practice-quiz01.html) | [VMLS Ch 1, 5](https://web.stanford.edu/~boyd/vmls/vmls.pdf) |
 | F April 10 | | | [HW1](https://colab.research.google.com/github/stanford-mse-125/web/blob/main/homework/hw01-eda-munging.ipynb) | |
-| M April 13 | [Feature engineering and regression diagnostics](https://stanford-mse-125.github.io/book/lec05-feature-engineering.html) | | | [VMLS Ch 13](https://web.stanford.edu/~boyd/vmls/vmls.pdf); [Data 8 Ch 15](https://inferentialthinking.com/chapters/15/Prediction.html) |
-| W April 15 | [Decision trees and random forests](https://stanford-mse-125.github.io/book/lec06-trees.html) | | [Quiz 2](practice-quiz02.html) | [IMS Ch 8–10](https://openintro-ims.netlify.app/model-mlr.html) |
+| M April 13 | [Feature engineering and regression diagnostics](https://stanford-mse-125.github.io/book/lec05-feature-engineering.html) | [slides](https://stanford-mse-125.github.io/slides/lec05-feature-engineering.html) | | [VMLS Ch 13](https://web.stanford.edu/~boyd/vmls/vmls.pdf); [Data 8 Ch 15](https://inferentialthinking.com/chapters/15/Prediction.html) |
+| W April 15 | [Validation and the bias-variance tradeoff](https://stanford-mse-125.github.io/book/lec06-validation.html) | [slides](https://stanford-mse-125.github.io/slides/lec06-validation.html) | [Quiz 2](practice-quiz02.html) | [VMLS Ch 13.3](https://web.stanford.edu/~boyd/vmls/vmls.pdf); [IMS Ch 8–10](https://openintro-ims.netlify.app/model-mlr.html) |
 | F April 17 | | | Project groups | |
-| M April 20 | [Validation and the bias-variance tradeoff](https://stanford-mse-125.github.io/book/lec07-validation.html) | | | [VMLS Ch 13.3](https://web.stanford.edu/~boyd/vmls/vmls.pdf); [IMS Ch 8–10](https://openintro-ims.netlify.app/model-mlr.html) |
+| M April 20 | [Classification (logistic regression + metrics)](https://stanford-mse-125.github.io/book/lec07-classification.html) | | | [IMS Ch 9](https://openintro-ims.netlify.app/model-logistic.html) |
 | W April 22 | [Bootstrap and the normal approximation](https://stanford-mse-125.github.io/book/lec08-sampling.html) | | Quiz 3 | [Data 8 Ch 10](https://inferentialthinking.com/chapters/10/Sampling_and_Empirical_Distributions.html); [IMS Ch 5](https://openintro-ims.netlify.app/foundations-bootstrapping.html) |
 | F April 24 | | | HW2 | |
 | M April 27 | [Permutation tests](https://stanford-mse-125.github.io/book/lec09-permutation-tests.html) | | | [Data 8 Ch 12](https://inferentialthinking.com/chapters/12/Comparing_Two_Samples.html); [Data 8 Ch 13](https://inferentialthinking.com/chapters/13/Estimation.html) |
@@ -24,7 +24,7 @@ description: Course modules and dates
 | M May 4 | [Multiple testing + correlation](https://stanford-mse-125.github.io/book/lec11-multiple-testing.html) | | | [Poldrack Ch 17](https://statsthinking21.github.io/statsthinking21-core-site/); [Data 8 Ch 15.1](https://inferentialthinking.com/chapters/15/1/Correlation.html) |
 | W May 6 | [Regression inference + diagnostics](https://stanford-mse-125.github.io/book/lec12-regression-inference.html) | | Quiz 5 | [IMS Ch 24–25](https://openintro-ims.netlify.app/inf-model-slr.html) |
 | F May 8 | | | HW3 | |
-| M May 11 | [Classification (logistic regression + metrics)](https://stanford-mse-125.github.io/book/lec13-classification.html) | | | [IMS Ch 9](https://openintro-ims.netlify.app/model-logistic.html) |
+| M May 11 | [Decision trees and random forests](https://stanford-mse-125.github.io/book/lec13-trees.html) | | | [IMS Ch 8–10](https://openintro-ims.netlify.app/model-mlr.html) |
 | W May 13 | [PCA / dimensionality reduction](https://stanford-mse-125.github.io/book/lec14-pca.html) | | Quiz 6 | [VanderPlas Ch 5.09](https://jakevdp.github.io/PythonDataScienceHandbook/05.09-principal-component-analysis.html) |
 | F May 15 | | | Project midterm report | |
 | M May 18 | [Clustering (k-means)](https://stanford-mse-125.github.io/book/lec15-clustering.html) | | | [VMLS Ch 4.1](https://web.stanford.edu/~boyd/vmls/vmls.pdf) |
