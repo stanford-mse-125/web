@@ -1,4 +1,4 @@
-# Using AI to Support Your Learning
+# Instruction on AI usage
 
 Hi, everyone,
 
