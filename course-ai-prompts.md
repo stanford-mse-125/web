@@ -1,9 +1,5 @@
 # Instruction on AI usage
 
-Hi, everyone,
-
-We have organized a set of useful AI prompts to help you use AI more effectively in this course. The goal is to help you learn more deeply, work through assignments more thoughtfully, and get useful feedback on your own answers **without relying on AI to do the work for you**.
-
 Used well, AI can be a helpful:
 - tutor when you are learning a new concept,
 - coach when you are working through an assignment,
