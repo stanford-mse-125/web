@@ -17,7 +17,7 @@ description: Course modules and dates
 | F April 17 | | | Project groups | |
 | M April 20 | [Classification (logistic regression + metrics)](https://stanford-mse-125.github.io/book/lec07-classification.html) | | | [IMS Ch 9](https://openintro-ims.netlify.app/model-logistic.html) |
 | W April 22 | [Bootstrap and the normal approximation](https://stanford-mse-125.github.io/book/lec08-sampling.html) | | [Quiz 3](practice-quiz03.html) | [Data 8 Ch 10](https://inferentialthinking.com/chapters/10/Sampling_and_Empirical_Distributions.html); [IMS Ch 5](https://openintro-ims.netlify.app/foundations-bootstrapping.html) |
-| F April 24 | | | HW2 | |
+| F April 24 | | | [HW2](https://colab.research.google.com/github/stanford-mse-125/web/blob/main/homework/hw02-regression.ipynb) | |
 | M April 27 | [Permutation tests](https://stanford-mse-125.github.io/book/lec09-permutation-tests.html) | | | [Data 8 Ch 12](https://inferentialthinking.com/chapters/12/Comparing_Two_Samples.html); [Data 8 Ch 13](https://inferentialthinking.com/chapters/13/Estimation.html) |
 | W April 29 | [Hypothesis testing framework](https://stanford-mse-125.github.io/book/lec10-hypothesis-testing.html) | | Quiz 4 | [Data 8 Ch 11](https://inferentialthinking.com/chapters/11/Testing_Hypotheses.html) |
 | F May 1 | | | Project proposal | |
