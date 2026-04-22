@@ -28,7 +28,7 @@ description: Course modules and dates
 | W May 13 | [PCA / dimensionality reduction](https://stanford-mse-125.github.io/book/lec14-pca.html) | | Quiz 6 | [VanderPlas Ch 5.09](https://jakevdp.github.io/PythonDataScienceHandbook/05.09-principal-component-analysis.html) |
 | F May 15 | | | Project midterm report | |
 | M May 18 | [Clustering (k-means)](https://stanford-mse-125.github.io/book/lec15-clustering.html) | | | [VMLS Ch 4.1](https://web.stanford.edu/~boyd/vmls/vmls.pdf) |
-| W May 20 | [Backtesting + time series validation](https://stanford-mse-125.github.io/book/lec16-backtesting.html) | | Quiz 7 | [FPP3 Ch 5](https://otexts.com/fpp3/toolbox.html) |
+| W May 20 | [When validation isn't enough](https://stanford-mse-125.github.io/book/lec16-feedback-loops.html) | | Quiz 7 | [FPP3 Ch 5](https://otexts.com/fpp3/toolbox.html) |
 | F May 22 | | | HW4 | |
 | M May 25 | Holiday | | | |
 | W May 27 | [AutoML, LLMs, and the future of data analysis](https://stanford-mse-125.github.io/book/lec17-automl-llms.html) | | Quiz 8 | TBD |
