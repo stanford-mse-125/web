@@ -40,6 +40,9 @@ We expect effort to scale with team size: a 4-person team should produce roughly
 
 Every team must meet with a member of the course staff for 15 minutes before the proposal deadline. At least two team members must attend. Sign up for a slot on the [scheduling sheet](https://docs.google.com/spreadsheets/d/1iKRNYsCut2WBU-jyK78trq16yJ3wpZEi/edit?usp=sharing&ouid=112240009107036111267&rtpof=true&sd=true).
 
+## Sample Project Ideas
+We are also sharing a few sample project ideas in a proposal-style format similar to what you will submit. These are mainly meant to give you inspiration for project scope, structure, and level of detail. You are welcome to use them as a starting point and adapt the structure for your own proposal: https://docs.google.com/document/d/1DjuEORRuyBPhwOmkIjO7m6r5swlpjt0HRnsxSRQCbdg/edit?tab=t.0
+
 ## Proposal (due Thu May 1)
 
 After your TA meeting, submit your proposal via [Project Proposal Form](https://docs.google.com/forms/d/e/1FAIpQLSfa-vTIvn_M-3aSCJuPIW7qAzRtX8J2gPrhaUSeo1Xz1VCVYA/viewform?usp=publish-editor). The course staff will provide detailed comments. Your proposal should describe your research question, planned datasets, and intended methods.
