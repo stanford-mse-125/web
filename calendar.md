@@ -23,7 +23,7 @@ description: Course modules and dates
 | F May 1 | | | Project proposal | |
 | M May 4 | [Multiple testing + correlation](https://stanford-mse-125.github.io/book/lec11-multiple-testing.html) | | | [Poldrack Ch 17](https://statsthinking21.github.io/statsthinking21-core-site/); [Data 8 Ch 15.1](https://inferentialthinking.com/chapters/15/1/Correlation.html) |
 | W May 6 | [Regression inference + diagnostics](https://stanford-mse-125.github.io/book/lec12-regression-inference.html) | | Quiz 5 | [IMS Ch 24–25](https://openintro-ims.netlify.app/inf-model-slr.html) |
-| F May 8 | | | HW3 | |
+| F May 8 | | | [HW3](https://colab.research.google.com/github/stanford-mse-125/web/blob/main/homework/hw03-testing-correlation.ipynb) | |
 | M May 11 | [Decision trees and random forests](https://stanford-mse-125.github.io/book/lec13-trees.html) | | | [IMS Ch 8–10](https://openintro-ims.netlify.app/model-mlr.html) |
 | W May 13 | [PCA / dimensionality reduction](https://stanford-mse-125.github.io/book/lec14-pca.html) | | Quiz 6 | [VanderPlas Ch 5.09](https://jakevdp.github.io/PythonDataScienceHandbook/05.09-principal-component-analysis.html) |
 | F May 15 | | | Project midterm report | |
