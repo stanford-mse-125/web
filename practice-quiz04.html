@@ -2528,7 +2528,8 @@ window.Quarto = {
 </div>
 <ol type="a">
 <li><p>Roughly what fraction of permutations are at least as extreme as the observed <span class="math inline">\(+3.0\)</span> minute gap, in either direction? Circle one: <span class="math inline">\(\approx 0.001\)</span> / <span class="math inline">\(\approx 0.01\)</span> / <span class="math inline">\(\approx 0.05\)</span> / <span class="math inline">\(\approx 0.50\)</span></p></li>
-<li><p>At <span class="math inline">\(\alpha = 0.05\)</span>, the <strong>two-sided</strong> test (circle one): <strong>rejects</strong> / <strong>fails to reject</strong> the null.</p></li>
+<li><p>After counting more carefully, the company finds that <strong>119 of the 10,000 permutations</strong> produced a fake effect at least as extreme as the observed <span class="math inline">\(+3.0\)</span> minutes (in either direction). Compute the <strong>conservative</strong> p-value using the <span class="math inline">\((n_{\text{extreme}} + 1) / (n_{\text{perms}} + 1)\)</span> estimator: ,<span class="math inline">\(p =\)</span> ________</p></li>
+<li><p>At <span class="math inline">\(\alpha = 0.05\)</span>, the two-sided test (circle one): <strong>rejects</strong> / <strong>fails to reject</strong> the null.</p></li>
 <li><p>The company also runs a bootstrap and gets a 99% CI for the mean difference of <span class="math inline">\([+1.4, +4.6]\)</span> minutes. Without computing anything, what does this CI imply about the p-value at <span class="math inline">\(\alpha = 0.01\)</span>? (1 sentence)</p></li>
 </ol>
 <div class="callout callout-style-default callout-tip callout-titled" title="Solution">
@@ -2543,9 +2544,10 @@ window.Quarto = {
 </div>
 <div id="callout-8" class="callout-8-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p><strong>(a)</strong> <span class="math inline">\(\approx \mathbf{0.01}\)</span> — the red-shaded tails together hold roughly 1% of the mass (true value: <span class="math inline">\(p \approx 0.012\)</span>).</p>
-<p><strong>(b)</strong> <strong>Rejects</strong> the null at α = 0.05.</p>
-<p><strong>(c)</strong> The 99% CI excludes zero, so by <strong>CI/test duality</strong> the corresponding two-sided test rejects at α = 0.01 — meaning the p-value is below 0.01. This is consistent with the <span class="math inline">\(p \approx 0.012\)</span> we read off the histogram (close to but slightly above 0.01; the small discrepancy is Monte Carlo noise between two separate simulations).</p>
+<p><strong>(a)</strong> <span class="math inline">\(\approx \mathbf{0.01}\)</span> — the red-shaded tails together hold roughly 1% of the mass.</p>
+<p><strong>(b)</strong> <span class="math inline">\(p = (119 + 1)/(10{,}000 + 1) = 120/10{,}001 \approx \mathbf{0.0120}\)</span>. The <span class="math inline">\(+1/+1\)</span> correction prevents reporting <span class="math inline">\(p = 0\)</span> from a finite simulation and keeps the estimator conservative.</p>
+<p><strong>(c)</strong> <strong>Rejects</strong> the null at α = 0.05 (p ≈ 0.012 &lt; 0.05).</p>
+<p><strong>(d)</strong> The 99% CI excludes zero, so by <strong>CI/test duality</strong> the corresponding two-sided test rejects at α = 0.01 — meaning the p-value is below 0.01. This is consistent with the <span class="math inline">\(p \approx 0.012\)</span> we computed in (b) (close to but slightly above 0.01; the small discrepancy is Monte Carlo noise between two separate simulations).</p>
 </div>
 </div>
 </div>
@@ -2584,7 +2586,7 @@ window.Quarto = {
 </ol>
 <p>Tool used: permutation test. Does <span class="math inline">\(p = 0.001\)</span> license the conclusion <em>“coffee causes lower stroke rates”</em>? <strong>Yes / No</strong> — and why?</p>
 <ol start="3" type="a">
-<li>A startup asks: “Is our new chatbot more accurate than the old one?” They run <strong>the same two test queries through each chatbot once</strong>, scoring each response 1 (correct) or 0 (wrong). They want to use a permutation test. What is the <strong>assumption</strong> a permutation test requires under the null, and is it satisfied here? (1–2 sentences)</li>
+<li>A startup wants to test: “Is our new chatbot more accurate than the old one?” They run <strong>the same 100 test queries</strong> through each chatbot, scoring each response 1 (correct) or 0 (wrong). They plan a permutation test that <strong>shuffles the chatbot labels across all 200 (chatbot, query) scores</strong> and recomputes the difference in mean accuracy each time. State the assumption a permutation test requires under the null, and explain in 1–2 sentences whether it is satisfied here.</li>
 </ol>
 <div class="callout callout-style-default callout-tip callout-titled" title="Solution">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="false" aria-label="Toggle callout">
@@ -2600,7 +2602,7 @@ window.Quarto = {
 <div class="callout-body-container callout-body">
 <p><strong>(a) Bootstrap.</strong> No clean closed-form SE exists for the median (the asymptotic formula involves the unknown population density at the median), so the bootstrap percentile CI is the practical tool. The CI quantifies the <em>precision</em> of the median estimate — sampling uncertainty over which 800 households happened to land in the sample.</p>
 <p><strong>(b) No.</strong> The permutation test is the right tool for testing whether the two groups’ stroke rates differ, and <span class="math inline">\(p = 0.001\)</span> confirms they do — but <strong>coffee drinking was not randomly assigned</strong>, so rejecting the null tells us only that the groups <em>differ</em>, not that coffee <em>causes</em> the lower stroke rate. Coffee drinkers may also exercise more, smoke less, see doctors more often — any of which could produce the gap. Random assignment is what licenses causal claims; without it, a small p-value is association, not causation.</p>
-<p><strong>(c)</strong> A permutation test requires <strong>exchangeability under the null</strong> — i.e., that swapping the group labels leaves the joint distribution of the data unchanged when there’s no real difference. Equivalently, the shuffled relabelings must each be just as plausible as the actual labeling under <span class="math inline">\(H_0\)</span>. <strong>This is not satisfied here:</strong> with only two queries (one per chatbot), there’s effectively just <span class="math inline">\(\binom{2}{1} = 2\)</span> relabelings, and even ignoring that, two single-query results carry too little information for a meaningful null distribution. The startup needs many more queries — and ideally each query run through <em>both</em> chatbots (a paired design that the basic permutation test would also need to be adapted to handle).</p>
+<p><strong>(c)</strong> A permutation test requires <strong>exchangeability under the null</strong> — that the chatbot labels carry no information about the score, so any relabeling is equally plausible if the chatbots are equally accurate. <strong>This is not satisfied here.</strong> Each query has a fixed difficulty (some are easy, some are hard), so chatbot A’s score on query 1 is <em>not</em> exchangeable with chatbot B’s score on query 47 — shuffling labels across all 200 (chatbot, query) scores would scramble query difficulty into the comparison, inflating noise. The data are <em>paired</em> (same query × both chatbots), and the standard “shuffle all labels” recipe ignores the pairing. The right tool is a <strong>paired</strong> permutation test: for each query, randomly flip the A/B label, leaving the within-query pair intact.</p>
 </div>
 </div>
 </div>
