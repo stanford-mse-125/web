@@ -2446,7 +2446,7 @@ window.Quarto = {
 </div>
 </div>
 <hr>
-<p><strong>Question 5.</strong> A pharmaceutical company is designing a new clinical trial. They need to know <strong>how many patients to enroll</strong> to detect a clinically meaningful effect with 80% power at <span class="math inline">\(\alpha = 0.05\)</span>. A junior analyst suggests: <em>“Let’s just bootstrap our pilot data — that’ll give us a CI, and we can read the sample size off the width.”</em></p>
+<p><strong>Question 5.</strong> A pharmaceutical company is designing a new clinical trial. They want to know <strong>how many patients to enroll</strong> so the resulting 95% CI for the mean change in cholesterol is no wider than <span class="math inline">\(\pm 2\)</span> mg/dL. A junior analyst suggests: <em>“Let’s just bootstrap our pilot data — that’ll give us a CI, and we can read the sample size off the width.”</em></p>
 <ol type="a">
 <li><p>Why can’t the bootstrap answer the sample-size question? Answer in 1–2 sentences.</p></li>
 <li><p>Which tool does answer it, and what one input does it require that the bootstrap doesn’t?</p></li>
@@ -2464,15 +2464,15 @@ window.Quarto = {
 <div id="callout-5" class="callout-5-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p><strong>(a)</strong> The bootstrap can only resample <em>data we already have</em>. A sample-size calculation asks how many patients we’d need in a <strong>future, larger</strong> trial — there’s no data yet at that size to resample. The bootstrap CI from the pilot tells us the SE at the pilot’s <span class="math inline">\(n\)</span>, not at any larger <span class="math inline">\(n\)</span>.</p>
-<p><strong>(b)</strong> The <strong>normal approximation</strong> (CLT-based formula). It requires a <em>guess</em> at the population standard deviation <span class="math inline">\(\sigma\)</span> (typically taken from pilot data or prior trials), which then plugs into <span class="math inline">\(\text{SE} = \sigma/\sqrt{n}\)</span> and lets us solve for the <span class="math inline">\(n\)</span> that achieves the desired SE / power. This is the family of calculation NIH ran before ACTG 175 enrolled a single patient.</p>
+<p><strong>(b)</strong> The <strong>normal approximation</strong> (CLT-based formula). It requires a <em>guess</em> at the population standard deviation <span class="math inline">\(\sigma\)</span> (typically taken from pilot data or prior trials), which then plugs into <span class="math inline">\(\text{SE} = \sigma/\sqrt{n}\)</span> and lets us solve for the <span class="math inline">\(n\)</span> that achieves the desired CI half-width <span class="math inline">\(1.96 \cdot \sigma/\sqrt{n}\)</span>. This is the family of calculation NIH ran before ACTG 175 enrolled a single patient.</p>
 </div>
 </div>
 </div>
 <hr>
-<p><strong>Question 6.</strong> A startup blog post reports: “Our bootstrap 95% CI for the conversion lift from the new checkout flow is <strong>[+1.2%, +6.8%]</strong>. So we are 95% confident that the true lift is between 1.2 and 6.8 percentage points.” A statistician on the team replies: “That’s not what a 95% CI means.”</p>
+<p><strong>Question 6.</strong> A startup blog post reports: “Our bootstrap 95% CI for the conversion lift from the new checkout flow is <strong>[+1.2%, +6.8%]</strong>. So we are 95% confident that the true lift is between 1.2 and 6.8 percentage points.” A statistician on the team replies: “That sentence is <em>ambiguous</em>. Depending on what you mean by ‘95% confident,’ it’s either correct or it’s confusing two different things.”</p>
 <ol type="a">
-<li><p>Identify the <strong>two specific errors</strong> in the blog post’s interpretation. (2 sentences)</p></li>
-<li><p>Write a corrected one-sentence interpretation of the same CI.</p></li>
+<li><p>Give a <strong>charitable</strong> reading under which the blog post’s statement is correct, and a <strong>strict</strong> reading under which it is wrong. (2–3 sentences)</p></li>
+<li><p>Rewrite the sentence so the source of randomness is unambiguous.</p></li>
 </ol>
 <div class="callout callout-style-default callout-tip callout-titled" title="Solution">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
@@ -2486,12 +2486,9 @@ window.Quarto = {
 </div>
 <div id="callout-6" class="callout-6-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p><strong>(a)</strong> Two errors:</p>
-<ol type="1">
-<li>The blog post treats the <strong>estimand</strong> as random (“there’s a 95% chance the true lift is in here”). The true lift is a fixed-but-unknown number; it is either inside the interval or it isn’t, with probability 1 either way. The randomness lives in the <em>interval</em> (which study you ran), not in the estimand.</li>
-<li>The blog post implies “95% confidence” is a probability statement about <em>this</em> interval. The actual coverage guarantee is <em>across many hypothetical repeats</em> of the study — a long-run frequency property of the <strong>procedure</strong>, not a probability about this specific interval.</li>
-</ol>
-<p><strong>(b)</strong> “Across many hypothetical repeats of this experiment, about 95% of the intervals built this way would contain the true conversion lift; for this run, the interval is [+1.2%, +6.8%].”</p>
+<p><strong>(a)</strong> <em>Charitable (frequentist) reading:</em> “the procedure that produced this interval has 95% coverage across hypothetical repeats of the study, and this run produced [+1.2%, +6.8%].” Under this reading the probability is over the <strong>sample</strong> (which study you happened to run); the truth is a fixed-but-unknown number. The statement is correct.</p>
+<p><em>Strict (Bayesian-sounding) reading:</em> “given the data we collected, there is a 95% probability that the true lift sits between 1.2% and 6.8%.” Under this reading the probability is over the <strong>truth itself</strong> (treated as a random variable). The bootstrap percentile CI does not deliver this — it uses no prior and runs no posterior calculation, so it cannot license a probability statement about the parameter. The textbook objection to the blog post is really objecting to <em>mixing</em> the two readings in one sentence.</p>
+<p><strong>(b)</strong> “Across many hypothetical repeats of this experiment, about 95% of the intervals built this way would contain the true conversion lift; for this run, the interval is [+1.2%, +6.8%].” (See Ch 8’s “two epistemologies” callout for the alternative Bayesian phrasing, which would require a prior the bootstrap doesn’t use.)</p>
 </div>
 </div>
 </div>
