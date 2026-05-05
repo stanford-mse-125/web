@@ -75,7 +75,7 @@ with details on how you used each.
 
 *Using AI.*
 You are encouraged to use AI to help you understand concepts, debug code, and check your work.
-The rule is simple: **you own what you submit, even if AI typed it.**
+The rule is simple: **you take responsibility for the work you submit, even if AI typed it.**
 The decisions in your homework — which test, which threshold, which subset of data, how to interpret the result — must be yours, not the AI's.
 A practical test: after using AI, you should be able to explain on a whiteboard (i) what you did, (ii) why you chose it, and (iii) what the result means — even if you couldn't reproduce the exact pandas or sklearn syntax.
 The [homework review sessions](#homework-review-sessions) are designed to confirm that you can.

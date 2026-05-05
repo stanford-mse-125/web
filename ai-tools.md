@@ -20,11 +20,11 @@ description: >-
 
 Lectures spend most of their time on **judgment** — choosing the right method, spotting issues in the data, interpreting results, deciding what to trust. That is the hard part of applied statistics, and it is the part AI can't do for you.
 
-Homework is where you practice that judgment on real data. The medium happens to be code, because code is how analyses actually get done. Coding fluency is a side effect, not the goal.
+Homework is where you practice that judgment on real data. The medium happens to be code, because code is how analyses actually get done. 
 
 So the rule is simple:
 
-> **You own what you submit, even if AI typed it.**
+> **You take responsibility for the work you submit, even if AI typed it.**
 
 You can ask an AI to write code. You can ask it to explain an error. You can ask it to walk you through a method. What you cannot do is hand the AI the homework and submit what comes back. The decisions in your submission — which test, which threshold, which subset of data, how to interpret the result — must be yours. If a TA asks "why did you do it that way?", you must be able to answer.
 
