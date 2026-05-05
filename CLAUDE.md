@@ -11,7 +11,7 @@ nav_exclude: true
 - `about.md` — course description, policies (devices, recording, accommodations)
 - `grading.md` — grading policies, homework/quiz/exam rules
 - `project.md` — project deliverables, deadlines, report outline
-- `ai-tools.md` — AI usage policy
+- `ai-tools.md` — Using AI in MSE 125: HW purpose + ownership rule ("you own what you submit, even if AI typed it"), recommended tools, prompt templates, academic integrity. Consolidated 2026-05-04 from former `course-ai-prompts.md`.
 - `_staffers/` — staff pages (one .md per person with YAML frontmatter)
 - `assets/images/` — staff photos, logos
 

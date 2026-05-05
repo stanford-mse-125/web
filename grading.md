@@ -73,13 +73,13 @@ We ask that you
 the textbooks, notes, web pages, or AI models you found useful,
 with details on how you used each.
 
-*Using AI effectively.*
-We suggest you use AI tools to help you understand concepts, debug code, and check your work.
-However, you should not paste a homework problem into an AI and submit the output.
-A good test: could you reproduce your solution on a whiteboard without AI assistance?
-If not, you haven't learned the material yet.
-The homework review sessions (see below) are designed to help you confirm
-that you've truly understood the material.
+*Using AI.*
+You are encouraged to use AI to help you understand concepts, debug code, and check your work.
+The rule is simple: **you own what you submit, even if AI typed it.**
+The decisions in your homework — which test, which threshold, which subset of data, how to interpret the result — must be yours, not the AI's.
+A practical test: after using AI, you should be able to explain on a whiteboard (i) what you did, (ii) why you chose it, and (iii) what the result means — even if you couldn't reproduce the exact pandas or sklearn syntax.
+The [homework review sessions](#homework-review-sessions) are designed to confirm that you can.
+For tool recommendations, prompt templates, and citation expectations, see [Using AI](ai-tools.html).
 
 *Sharing solutions.*
 Under no circumstance should you seek out or look at solutions to assignments given in previous years,
