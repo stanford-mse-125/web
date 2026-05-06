@@ -57,9 +57,9 @@ An 8-page submission (references and plots included in the page count). Aim to e
 
 Each team member submits an individual peer evaluation. Peer evaluations will be considered in grading.
 
-## In-person presentation (Jun 3–17)
+## In-person presentation (May 26 – Jun 10)
 
-Each team gives a ~20-minute presentation to the course staff, scheduled during the final two weeks of the quarter (May 27 – Jun 12). Sign-up slots will be posted in week 8. All team members must attend.
+Each team gives a ~20-minute presentation to the course staff, scheduled during the final two weeks of the quarter (May 26 – Jun 10). Sign-up slots will be posted in week 8. All team members must attend.
 
 The presentation should cover your research question, key findings, and one methodological choice you found interesting or surprising. Slides are optional — walking through your report is fine.
 
