@@ -63,6 +63,8 @@ Each team gives a ~20-minute presentation to the course staff, scheduled during 
 
 The presentation should cover your research question, key findings, and one methodological choice you found interesting or surprising. Slides are optional — walking through your report is fine.
 
+Sign up for a slot on the [scheduling sheet](https://docs.google.com/spreadsheets/d/1wA8B7aaEp4FHmOHpXEbifBXgK0rWTbaKfGBi_RDlMDI/edit?gid=0#gid=0).
+
 ## Grading
 
 The project is 30% of the course grade. Components:
