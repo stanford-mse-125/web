@@ -16,3 +16,4 @@ Use these practice quizzes to prepare for the weekly in-class quizzes. Each prac
 | 3 (Apr 22) | Lec 6--7: Validation, bias-variance, classification | [Practice Quiz 3](practice-quiz03.html) |
 | 4 (Apr 29) | Lec 8--9: Bootstrap, CLT, permutation tests | [Practice Quiz 4](practice-quiz04.html) |
 | 5 (May 6) | Lec 10--11: Hypothesis testing, multiple testing | [Practice Quiz 5](practice-quiz05.html) |
+| 6 (May 13) | Lec 12--13: Regression inference, trees | [Practice Quiz 6](practice-quiz06.html) |
