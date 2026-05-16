@@ -29,8 +29,8 @@ description: Course modules and dates
 | F May 15 | | | Project midterm report | |
 | M May 18 | [Clustering (k-means)](https://stanford-mse-125.github.io/book/lec15-clustering.html) | | | [VMLS Ch 4.1](https://web.stanford.edu/~boyd/vmls/vmls.pdf) |
 | W May 20 | [When validation isn't enough](https://stanford-mse-125.github.io/book/lec16-feedback-loops.html) | | Quiz 7 | [FPP3 Ch 5](https://otexts.com/fpp3/toolbox.html) |
-| F May 22 | | | HW4 | |
-| M May 25 | Holiday | | | |
+| F May 22 | | | | |
+| M May 25 | Holiday | | [HW4](https://colab.research.google.com/github/stanford-mse-125/web/blob/main/homework/hw04-trees-pca-clustering.ipynb) | |
 | W May 27 | [AutoML, LLMs, and the future of data analysis](https://stanford-mse-125.github.io/book/lec17-automl-llms.html) | | Quiz 8 | TBD |
 | M June 1 | [Causal inference I: DAGs + confounding](https://stanford-mse-125.github.io/book/lec18-causal-inference-1.html) | | HW5 | [The Effect Ch 1–6](https://theeffectbook.net/) |
 | W June 3 | [Causal inference II: natural experiments + A/B tests](https://stanford-mse-125.github.io/book/lec19-causal-inference-2.html) | | | [The Effect Ch 16–18](https://theeffectbook.net/) |
