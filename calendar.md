@@ -27,7 +27,7 @@ description: Course modules and dates
 | M May 11 | [Decision trees and random forests](https://stanford-mse-125.github.io/book/lec13-trees.html) | [slides](https://stanford-mse-125.github.io/slides/lec13-trees.html) | | [IMS Ch 8–10](https://openintro-ims.netlify.app/model-mlr.html) |
 | W May 13 | [PCA / dimensionality reduction](https://stanford-mse-125.github.io/book/lec14-pca.html) | [slides](https://stanford-mse-125.github.io/slides/lec14-pca.html) | [Quiz 6](practice-quiz06.html) | [VanderPlas Ch 5.09](https://jakevdp.github.io/PythonDataScienceHandbook/05.09-principal-component-analysis.html) |
 | F May 15 | | | Project midterm report | |
-| M May 18 | [Clustering (k-means)](https://stanford-mse-125.github.io/book/lec15-clustering.html) | | | [VMLS Ch 4.1](https://web.stanford.edu/~boyd/vmls/vmls.pdf) |
+| M May 18 | [Clustering (k-means)](https://stanford-mse-125.github.io/book/lec15-clustering.html) | [slides](https://stanford-mse-125.github.io/slides/lec15-clustering.html) | | [VMLS Ch 4.1](https://web.stanford.edu/~boyd/vmls/vmls.pdf) |
 | W May 20 | [When validation isn't enough](https://stanford-mse-125.github.io/book/lec16-feedback-loops.html) | | Quiz 7 | [FPP3 Ch 5](https://otexts.com/fpp3/toolbox.html) |
 | F May 22 | | | | |
 | M May 25 | Holiday | | [HW4](https://colab.research.google.com/github/stanford-mse-125/web/blob/main/homework/hw04-trees-pca-clustering.ipynb) | |
