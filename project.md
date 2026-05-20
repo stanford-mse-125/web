@@ -34,7 +34,17 @@ Any data-driven investigation is fair game. Past teams have studied athletic per
 
 Project teams consist of 2, 3, or 4 students. Submit your team via [Project Group Form](https://docs.google.com/forms/d/e/1FAIpQLSfg1A07nIHVrNfDzTGc8mVokXQIINTXzzf2KUM5gQd6YSFrIQ/viewform?usp=header) by **Friday, April 17**. If you need help finding teammates, post on Ed.
 
-We expect effort to scale with team size: a 4-person team should produce roughly twice the depth or breadth of a 2-person team. Peer evaluations factor into individual grades.
+We expect effort to scale with team size: a 4-person team should produce roughly twice the depth or breadth of a 2-person team.
+
+### Sharing the work fairly
+
+Individual project grades may differ materially from the team grade — upward for students who carry the team, and downward for students whose contributions are limited. We assess individual contributions using several signals: peer evaluations submitted with the final report, division-of-labor plans submitted to course staff (see below), the content of TA meetings, the in-person presentation, and — where applicable — version-control history.
+
+**Division-of-labor plans.** If you are concerned that your team is not sharing the work fairly, you may send a proposed division of labor to course staff at any time, with all teammates on cc. The plan should list each team member by name and the specific tasks they are responsible for, with deadlines. Teammates have 72 hours to reply — confirming assent or proposing substantive revisions. A non-response is treated as concurrence. We consult the final plan in assigning individual grades.
+
+**Dividing labor effectively.** We recommend dividing work by *analysis*, not by stage. Plans that assign data processing, modeling, and writing to different people tend to fail because each task blocks the next. Identify three or four distinct research questions and assign each team member full ownership of one — from data preparation through EDA, modeling, and writing the corresponding section. Work on integrative sections (introduction, conclusion) synchronously and in person.
+
+**Where to raise concerns.** If you have concerns that cannot be addressed by submitting a division-of-labor plan, come to office hours or contact your project TA directly.
 
 ## Required TA meeting (before May 1)
 
@@ -55,7 +65,7 @@ A 4-page submission. The bulk should be extensive exploratory data analysis of y
 
 An 8-page submission (references and plots included in the page count). Aim to employ three or more statistical methods from the course. Address all comments from your midterm report.
 
-Each team member submits an individual peer evaluation. Peer evaluations will be considered in grading.
+Each team member submits an individual peer evaluation. The form asks you to estimate each teammate's percentage contribution to the project, describe their specific contributions, and flag any concerns. Peer evaluations are confidential and factor materially into individual project grades.
 
 ## In-person presentation (May 26 – Jun 10)
 
@@ -75,7 +85,7 @@ The project is 30% of the course grade. Components:
 | Midterm report | Thorough EDA, at least one analysis, responsiveness to feedback |
 | Final report | Multiple methods applied thoughtfully, clear writing, addressed feedback |
 | Presentation | Can explain and defend your work in person |
-| Peer evaluation | Honest assessment of team contributions |
+| Peer evaluation | Honest assessment of team contributions; used to adjust individual grades up or down from the team grade |
 
 The project is intentionally open-ended. As long as your team has spent sufficient time collecting, cleaning, exploring, and analyzing data — and has addressed feedback on your proposal and midterm report — you should receive high marks. If you have concerns about your project's direction, visit office hours.
 
