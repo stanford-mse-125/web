@@ -31,7 +31,7 @@ description: Course modules and dates
 | W May 20 | [When validation isn't enough](https://stanford-mse-125.github.io/book/lec16-feedback-loops.html) | [slides](https://stanford-mse-125.github.io/slides/lec16-feedback-loops.html) | [Quiz 7](practice-quiz07.html) | [FPP3 Ch 5](https://otexts.com/fpp3/toolbox.html) |
 | F May 22 | | | | |
 | M May 25 | Holiday | | [HW4](https://colab.research.google.com/github/stanford-mse-125/web/blob/main/homework/hw04-trees-pca-clustering.ipynb) | |
-| W May 27 | [AutoML, LLMs, and the future of data analysis](https://stanford-mse-125.github.io/book/lec17-automl-llms.html) | | Quiz 8 | TBD |
+| W May 27 | [AutoML, LLMs, and the future of data analysis](https://stanford-mse-125.github.io/book/lec17-automl-llms.html) | | [Quiz 8](practice-quiz08.html) | TBD |
 | M June 1 | [Causal inference I: DAGs + confounding](https://stanford-mse-125.github.io/book/lec18-causal-inference-1.html) | | HW5 | [The Effect Ch 1–6](https://theeffectbook.net/) |
 | W June 3 | [Causal inference II: natural experiments + A/B tests](https://stanford-mse-125.github.io/book/lec19-causal-inference-2.html) | | | [The Effect Ch 16–18](https://theeffectbook.net/) |
 | F June 5 | **Final exam** 3:30–5:00 PM | | | |

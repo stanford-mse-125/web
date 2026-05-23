@@ -18,3 +18,4 @@ Use these practice quizzes to prepare for the weekly in-class quizzes. Each prac
 | 5 (May 6) | Lec 10--11: Hypothesis testing, multiple testing | [Practice Quiz 5](practice-quiz05.html) |
 | 6 (May 13) | Lec 12--13: Regression inference, trees | [Practice Quiz 6](practice-quiz06.html) |
 | 7 (May 20) | Lec 14--15: PCA, clustering | [Practice Quiz 7](practice-quiz07.html) |
+| 8 (May 27) | Lec 16: Validation in deployment (leakage, distribution shift, feedback loops, Goodhart) | [Practice Quiz 8](practice-quiz08.html) |
