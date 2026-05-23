@@ -49,7 +49,9 @@ and more.
 ## Acknowledgements
 {: .no_toc }
 
-The MS&E 125 materials build on course content developed by 
+The course materials — book, slides, homeworks, and quizzes — were developed using large language models, Claude in particular. The narrative conventions are mine: every chapter opens with a hook framing a consequential decision, every dataset is real and tied to a decision someone actually faces, and concepts arrive through examples and code before abstraction. AI produced first drafts and critiques within those conventions; my contribution was the curation — what to feed in, what to keep, and when to search for something better.
+
+The course also draws inspiration from earlier MS&E 125 offerings and related courses developed by 
 [Sharad Goel](https://5harad.com/), 
 [Mike Van Ness](https://mvanness354.github.io/blog/),
 [Josh Grossman](http://www.jdgrossman.com), 
