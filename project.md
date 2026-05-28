@@ -27,7 +27,7 @@ Any data-driven investigation is fair game. Past teams have studied athletic per
 | TA meeting | Before May 1 | 15-min slot with course staff |
 | Proposal | Fri May 1 | [Project Proposal Form](https://docs.google.com/forms/d/e/1FAIpQLSfa-vTIvn_M-3aSCJuPIW7qAzRtX8J2gPrhaUSeo1Xz1VCVYA/viewform?usp=publish-editor) |
 | Midterm report | Fri May 15 | 4-page PDF |
-| Final report + peer eval | Mon Jun 8, 9:00 AM | 8-page PDF + individual peer form |
+| Final report + peer eval | Mon Jun 8, 11:59 PM | 8-page PDF + individual peer form |
 | In-person presentation | May 27 – Jun 10 (scheduled) | ~20 min per team |
 
 ## Team formation
@@ -61,7 +61,7 @@ After your TA meeting, submit your proposal via [Project Proposal Form](https://
 
 A 4-page submission. The bulk should be extensive exploratory data analysis of your dataset(s). Include at least one analysis using methods taught before the due date, plus plans for additional analyses using methods covered later. Address all comments from your proposal.
 
-## Final report and peer evaluations (due Mon Jun 8, 9:00 AM)
+## Final report and peer evaluations (due Mon Jun 8, 11:59 PM)
 
 An 8-page submission (references and plots included in the page count). Aim to employ three or more statistical methods from the course. Address all comments from your midterm report.
 
@@ -71,7 +71,7 @@ Each team member submits an individual peer evaluation. The form asks you to est
 
 Each team gives a ~20-minute presentation to the course staff, scheduled during the final two weeks of the quarter (May 26 – Jun 10). Sign-up slots will be posted in week 8. All team members must attend.
 
-The presentation should cover your research question, key findings, and one methodological choice you found interesting or surprising. Slides are optional — walking through your report is fine.
+The presentation should cover your research question, key findings, and one methodological choice you found interesting or surprising. Visual aids are optional — prepare slides, a poster, or walk through your report.
 
 Sign up for a slot on the [scheduling sheet](https://docs.google.com/spreadsheets/d/1wA8B7aaEp4FHmOHpXEbifBXgK0rWTbaKfGBi_RDlMDI/edit?gid=0#gid=0).
 

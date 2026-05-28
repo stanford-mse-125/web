@@ -110,8 +110,7 @@ which will ask some simple questions on course material.
 Quizzes will be cumulative.
 
 Quizzes will take place in class on Wednesdays.
-These quizzes will be closed book and internet.
-You may bring a single sheet of handwritten notes (both sides).
+These quizzes will be closed book and internet, with no notes, calculators, or other devices.
 Each quiz will generally last 10 minutes, but some may be longer.
 
 *Drops.* Your lowest quiz score will be dropped.
@@ -127,7 +126,8 @@ you may shift all quiz weight onto the final exam
 
 This class will have a final exam during the assigned exam period
 scheduled by the University registrar.
-The exam will be cumulative, closed book and internet.
+The exam will be cumulative, closed book and internet, with no calculators or other devices.
+Causal inference (Lectures 18–19) will not appear on the exam.
 You may bring a single sheet of handwritten notes (both sides).
 The final exam will be 1.5 hours long.
 

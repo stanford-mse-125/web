@@ -35,4 +35,4 @@ description: Course modules and dates
 | M June 1 | [Causal inference I: DAGs + confounding](https://stanford-mse-125.github.io/book/lec18-causal-inference-1.html) | | [HW5](https://colab.research.google.com/github/stanford-mse-125/web/blob/main/homework/hw05-feedback-and-ai.ipynb) | [The Effect Ch 1–6](https://theeffectbook.net/) |
 | W June 3 | [Causal inference II: natural experiments + A/B tests](https://stanford-mse-125.github.io/book/lec19-causal-inference-2.html) | | | [The Effect Ch 16–18](https://theeffectbook.net/) |
 | F June 5 | **Final exam** 3:30–5:00 PM | | [What to expect](practice-final-handout.html) | |
-| M June 8 | | | Project final report + peer evaluations (9 AM) | |
+| M June 8 | | | Project final report + peer evaluations (11:59 PM) | |
