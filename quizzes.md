@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Practice Quizzes
-description: Practice quizzes for MSE 125
+title: Practice Quizzes/Exams
+description: Practice quizzes/exams for MSE 125
 nav_order: 4
 ---
 
@@ -19,3 +19,8 @@ Use these practice quizzes to prepare for the weekly in-class quizzes. Each prac
 | 6 (May 13) | Lec 12--13: Regression inference, trees | [Practice Quiz 6](practice-quiz06.html) |
 | 7 (May 20) | Lec 14--15: PCA, clustering | [Practice Quiz 7](practice-quiz07.html) |
 | 8 (May 27) | Lec 16: Validation in deployment (leakage, distribution shift, feedback loops, Goodhart) | [Practice Quiz 8](practice-quiz08.html) |
+
+# Practice Finals
+| Final | Covers | Practice exams | Solution
+|------|--------|--------------|--------------|
+| 1 (Jun 5th) | All the materials before Lec 17 | [Practice Final](practice-final-student.pdf) | [Practice Final](practice-final.pdf)| 
