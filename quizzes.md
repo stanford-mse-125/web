@@ -23,4 +23,4 @@ Use these practice quizzes to prepare for the weekly in-class quizzes. Each prac
 # Practice Finals
 | Final | Covers | Practice exams | Solution
 |------|--------|--------------|--------------|
-| 1 (Jun 5th) | All the materials before Lec 17 | [Practice Final](practice-final-student.pdf) | [Practice Final](practice-final.pdf)| 
+| 1 (Jun 5th) | All the materials before Lec 17 | [Practice Final](practice-final-student.pdf) | [Practice Final Solution](practice-final.pdf)| 
