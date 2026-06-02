@@ -21,6 +21,7 @@ Use these practice quizzes to prepare for the weekly in-class quizzes. Each prac
 | 8 (May 27) | Lec 16: Validation in deployment (leakage, distribution shift, feedback loops, Goodhart) | [Practice Quiz 8](practice-quiz08.html) |
 
 # Practice Finals
-| Final | Covers | Practice exams | Solution |
-|------|--------|--------------|--------------|
-| 1 (Jun 5th) | All the materials before Lec 17 | [Practice Final](practice-final-student.pdf) | [Practice Final Solution](practice-final.pdf)| 
+
+| Final       | Covers                          | Practice exams                               | Solution                                      |
+|-------------|---------------------------------|----------------------------------------------|-----------------------------------------------|
+| 1 (Jun 5th) | All the materials before Lec 17 | [Practice Final](practice-final-student.pdf) | [Practice Final Solution](practice-final.pdf) |
