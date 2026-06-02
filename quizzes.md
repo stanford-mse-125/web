@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Practice Quizzes/Exams
-description: Practice quizzes/exams for MSE 125
+title: Practice Quizzes
+description: Practice quizzes for MSE 125
 nav_order: 4
 ---
 
