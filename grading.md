@@ -37,8 +37,9 @@ The table below shows a few examples:
 | Quizzes missed | Skip final? | Quizzes weight | Final exam weight |
 |---|---|---|---|
 | 0 | No | 25% | 20% |
-| 2 (of 8) | No | 18.75% | 26.25% |
-| 4 (of 8) | No | 12.5% | 32.5% |
+| 1 | No | 25% | 20% |
+| 2 (of 8) | No | 21.4% | 23.6% |
+| 4 (of 8) | No | 14.3% | 30.7% |
 | All | No | 0% | 45% |
 | 0 | Yes | 45% | 0% |
 
@@ -50,8 +51,9 @@ In detail, here is how we compute quiz and final exam scores:
 - One quiz is dropped: your lowest score out of all 8 quizzes, where a missed
   quiz counts as your lowest. The remaining 7 count. Your quiz score is the
   average of your standardized scores on the counted quizzes you took.
-- If you take the final, your quiz weight is 25% × (quizzes taken)/8, and the
-  weight of the quizzes you missed shifts onto the final, as in the table above.
+- If you take the final, your quiz weight is 25% × (counted quizzes taken)/7 —
+  the drop forgives one missed quiz, and the weight of each further missed quiz
+  (25%/7 ≈ 3.6% each) shifts onto the final, as in the table above.
 - If you skip the final, your final exam score is replaced by your quiz score.
   If you missed more than one quiz, your quiz score is the sum of your
   standardized quiz scores divided by 7 — each missing quiz beyond the dropped
