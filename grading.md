@@ -42,9 +42,24 @@ The table below shows a few examples:
 | All | No | 0% | 45% |
 | 0 | Yes | 45% | 0% |
 
+In detail, here is how we compute quiz and final exam scores:
+
+- Each quiz is standardized (z-scored across the class), so quizzes of
+  different difficulty count comparably. The final exam is standardized the
+  same way.
+- One quiz is dropped: your lowest score out of all 8 quizzes, where a missed
+  quiz counts as your lowest. The remaining 7 count. Your quiz score is the
+  average of your standardized scores on the counted quizzes you took.
+- If you take the final, your quiz weight is 25% × (quizzes taken)/8, and the
+  weight of the quizzes you missed shifts onto the final, as in the table above.
+- If you skip the final, your final exam score is replaced by your quiz score.
+  If you missed more than one quiz, your quiz score is the sum of your
+  standardized quiz scores divided by 7 — each missing quiz beyond the dropped
+  one counts as the class average.
+
 To get full credit in the course, 
 you'll need to take the exam or at least 7 of the quizzes.
-If you take both the final and at least 7 quizzes, then your score on both will be max(standardized quiz score, standardized final score). So you can't hurt your grade by taking the final.
+If you take both the final and at least 7 quizzes, then your score on both will be max(standardized quiz score, standardized final score). So you can't hurt your grade by taking the final — and if you skip it, the max is simply your quiz score.
 
 ## Homework
 
@@ -113,7 +128,8 @@ Quizzes will take place in class on Wednesdays.
 These quizzes will be closed book and internet, with no notes, calculators, or other devices.
 Each quiz will generally last 10 minutes, but some may be longer.
 
-*Drops.* Your lowest quiz score will be dropped.
+*Drops.* Your lowest quiz score will be dropped. The drop is taken over all 8
+quizzes, so if you missed a quiz, the missed quiz is the one dropped.
 
 *Regrades.* You can ask for your quiz to be regraded up until two days after grades have been assigned.
 Regrades may increase or decrease your grade.
